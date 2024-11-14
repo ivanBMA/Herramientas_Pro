@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Herramientas_Pro.Models.Productos>
+
+<style>
+    th{
+        margin:2rem;
+        text-align:center;
+        color:blue;
+        border-left:2px solid black;
+    }
+
+    td {
+        margin: 2rem;
+        text-align: center;
+        color: red;
+    }
+</style>    
+
+<h2>Lista de Productos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Información</th>
+            <th>Especificación</th>
+            <th>Código de Producto</th>
+            <th>Cantidad Mínima</th>
+            <th>Unidad</th>
+            <th>Ubicación</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Producto</td>
+                <td>@item.Categoria</td>
+                <td>@item.Info</td>
+                <td>@item.Especificacion</td>
+                <td>@item.Codigo_Producto</td>
+                <td>@item.Cantidad_Minima</td>
+                <td>@item.Coste_Unidad</td>
+                <td>@item.Ubicacion</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
