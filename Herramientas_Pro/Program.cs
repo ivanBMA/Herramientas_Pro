@@ -41,6 +41,29 @@ app.MapControllerRoute(
     defaults: new { controller = "Pedidos" }
 );
 
+app.MapControllerRoute(
+    name: "inventario",
+    pattern: "inventario/{action=Index}/{id?}",
+    defaults: new { controller = "Inventarios" }
+);
+
+app.MapControllerRoute(
+    name: "fabricacions",
+    pattern: "fabricacions/{action=Index}/{id?}",
+    defaults: new { controller = "Fabricacions" }
+);
+
+app.MapControllerRoute(
+    name: "entradas_Salidas",
+    pattern: "entradas_Salidas/{action=Index}/{id?}",
+    defaults: new { controller = "Entradas_Salidas" }
+);
+app.MapControllerRoute(
+    name: "arreglos",
+    pattern: "arreglos/{action=Index}/{id?}",
+    defaults: new { controller = "Arreglos" }
+);
+
 
 app.MapControllerRoute(
     name: "default",

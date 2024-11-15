@@ -1,10 +1,10 @@
-﻿@model IEnumerable<Herramientas_Pro.Models.Pedidos>
+﻿@model IEnumerable<Herramientas_Pro.Models.Entradas_Salidas>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Pedidos</h1>
+<h1>Entradas Salidas</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,37 +13,37 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Presupuestos)
+                @Html.DisplayNameFor(model => model.Proyecto)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Cliente)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Tipo)
+                @Html.DisplayNameFor(model => model.Diseño)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Medicion)
+                @Html.DisplayNameFor(model => model.Vidrios)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Nube_Puntos)
+                @Html.DisplayNameFor(model => model.Baranda)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Estado)
+                @Html.DisplayNameFor(model => model.Zanca)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Fecha)
+                @Html.DisplayNameFor(model => model.Montajes)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Diseño_Inicial)
+                @Html.DisplayNameFor(model => model.Plotters)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Fimra)
+                @Html.DisplayNameFor(model => model.Peldaños)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Otros)
+                @Html.DisplayNameFor(model => model.Guia)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Responsable)
+                @Html.DisplayNameFor(model => model.Tornilleria)
             </th>
             <th></th>
         </tr>
@@ -52,37 +52,37 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Presupuestos)
+                @Html.DisplayFor(modelItem => item.Proyecto)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Cliente)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Tipo)
+                @Html.DisplayFor(modelItem => item.Diseño)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Medicion)
+                @Html.DisplayFor(modelItem => item.Vidrios)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Nube_Puntos)
+                @Html.DisplayFor(modelItem => item.Baranda)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Estado)
+                @Html.DisplayFor(modelItem => item.Zanca)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Fecha)
+                @Html.DisplayFor(modelItem => item.Montajes)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Diseño_Inicial)
+                @Html.DisplayFor(modelItem => item.Plotters)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Fimra)
+                @Html.DisplayFor(modelItem => item.Peldaños)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Otros)
+                @Html.DisplayFor(modelItem => item.Guia)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Responsable)
+                @Html.DisplayFor(modelItem => item.Tornilleria)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

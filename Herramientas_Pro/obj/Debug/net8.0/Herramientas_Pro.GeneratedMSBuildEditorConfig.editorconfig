@@ -28,12 +28,92 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Arreglos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZWdsb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Arreglos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZWdsb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Arreglos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZWdsb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Arreglos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZWdsb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Arreglos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZWdsb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Entradas_Salidas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNfU2FsaWRhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Entradas_Salidas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNfU2FsaWRhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Entradas_Salidas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNfU2FsaWRhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Entradas_Salidas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNfU2FsaWRhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Entradas_Salidas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNfU2FsaWRhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Fabricacions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFicmljYWNpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Fabricacions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFicmljYWNpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Fabricacions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFicmljYWNpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Fabricacions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFicmljYWNpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Fabricacions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFicmljYWNpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Inventarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Inventarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Inventarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Inventarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Inventarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Pedidos/Create.cshtml]
