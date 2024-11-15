@@ -286,3 +286,4 @@ C:\Users\Iván\Documents\Domi\Herramientas_Pro\Herramientas_Pro\bin\Debug\net8.0
 C:\Users\Iván\Documents\Domi\Herramientas_Pro\Herramientas_Pro\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Iván\Documents\Domi\Herramientas_Pro\Herramientas_Pro\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Iván\Documents\Domi\Herramientas_Pro\Herramientas_Pro\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Iván\Documents\Domi\Herramientas_Pro\Herramientas_Pro\obj\Debug\net8.0\Herramientas_Pro.sourcelink.json

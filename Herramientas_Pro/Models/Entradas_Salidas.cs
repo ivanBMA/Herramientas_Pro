@@ -1,18 +1,22 @@
-﻿namespace Herramientas_Pro.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Herramientas_Pro.Models
 {
     public class Entradas_Salidas
     {
-        private String Proyecto { get; set; }
-        private String Cliente { get; set; }
-        private String Diseño { get; set; }
-        private String Vidrios { get; set; }
-        private String Baranda { get; set; }
-        private String Zanca { get; set; }
-        private String Montajes { get; set; }
-        private String Plotters { get; set; }
-        private String Peldaños { get; set; }
-        private String Guia { get; set; }
-        private String Tornilleria { get; set; }
+        [Key]
+        public int Id { get; set; }  // Clave primaria recomendada
+        public String Proyecto { get; set; }
+        public String Cliente { get; set; }
+        public String Diseño { get; set; }
+        public String Vidrios { get; set; }
+        public String Baranda { get; set; }
+        public String Zanca { get; set; }
+        public String Montajes { get; set; }
+        public String Plotters { get; set; }
+        public String Peldaños { get; set; }
+        public String Guia { get; set; }
+        public String Tornilleria { get; set; }
 
     }
 }

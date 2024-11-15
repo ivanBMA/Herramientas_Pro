@@ -1,18 +1,22 @@
-﻿namespace Herramientas_Pro.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Herramientas_Pro.Models
 {
     public class Pedidos
     {
-        private String Presupuestos { get; set; }
-        private String Cliente { get; set; }
-        private String Tipo { get; set; }
-        private String Medicion { get; set; }
-        private Boolean Nube_Puntos { get; set; }
-        private String Estado { get; set; }
-        private DateTime Fecha { get; set; }
-        private String Diseño_Inicial { get; set; }
-        private String Fimra { get; set; }
-        private String Otros { get; set; }
-        private String Responsable { get; set; }
+        [Key]
+        public int Id { get; set; }  // Clave primaria recomendada
+        public String Presupuestos { get; set; }
+        public String Cliente { get; set; }
+        public String Tipo { get; set; }
+        public String Medicion { get; set; }
+        public Boolean Nube_Puntos { get; set; }
+        public String Estado { get; set; }
+        public DateTime Fecha { get; set; }
+        public String Diseño_Inicial { get; set; }
+        public String Fimra { get; set; }
+        public String Otros { get; set; }
+        public String Responsable { get; set; }
 
     }
 }

@@ -35,6 +35,12 @@ app.MapControllerRoute(
     defaults: new { controller = "Productos" }
 );
 
+app.MapControllerRoute(
+    name: "pedidos",
+    pattern: "pedidos/{action=Index}/{id?}",
+    defaults: new { controller = "Pedidos" }
+);
+
 
 app.MapControllerRoute(
     name: "default",

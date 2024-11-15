@@ -1,8 +1,12 @@
-﻿namespace Herramientas_Pro.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Herramientas_Pro.Models
 {
     public class Arreglos
     {
-        private DateTime Fecha { get; set; }
-        private String Responsable { get; set; }
+        [Key]
+        public int Id { get; set; }  // Clave primaria recomendada
+        public DateTime Fecha { get; set; }
+        public String Responsable { get; set; }
     }
 }

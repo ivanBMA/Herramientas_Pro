@@ -1,6 +1,7 @@
 ﻿using Herramientas_Pro.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Herramientas_Pro.Controllers
@@ -56,18 +57,34 @@ namespace Herramientas_Pro.Controllers
 
         
         // GET: ProductosController1/Edit/5
-        public ActionResult Edit(int id)
+        public IActionResult Editar(int id)
         {
-            return View();
+            Productos protdutoAntiguo = _context.Productos.Find(id);
+            return View(protdutoAntiguo);
         }
 
         // POST: ProductosController1/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public IActionResult Editar(int id, IFormCollection collection)
         {
             try
             {
+                Productos productoNuevo = new Productos()
+                {
+                    Id = id,
+                    Producto = collection["Producto"],
+                    Categoria = collection["Categoria"],
+                    Info = collection["Info"],
+                    Especificacion = collection["Especificacion"],
+                    Codigo_Producto = collection["Codigo_Producto"],
+                    Cantidad_Minima = Convert.ToDecimal(collection["Cantidad_Minima"]),
+                    Coste_Unidad = Convert.ToDecimal(collection["Coste_Unidad"]),
+                    Ubicacion = collection["Ubicacion"]
+                };
+                _context.Productos.Update(productoNuevo);
+                _context.SaveChanges();
+
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -77,24 +94,12 @@ namespace Herramientas_Pro.Controllers
         }
 
         // GET: ProductosController1/Delete/5
-        public ActionResult Delete(int id)
+        public IActionResult Borrar(int id)
         {
-            return View();
-        }
-
-        // POST: ProductosController1/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            Productos protduto = _context.Productos.Find(id);
+            _context.Productos.Remove(protduto);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
         }
     }
 }

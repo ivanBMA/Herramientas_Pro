@@ -1,14 +1,18 @@
-﻿namespace Herramientas_Pro.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Herramientas_Pro.Models
 {
     public class Inventario
     {
-        private String Producto { get; set; }
-        private String Codigo_Producto { get; set; }
-        private double stock { get; set; }
-        private String Unidad { get; set; }
-        private double Cantidad_Minima { get; set; }
-        private String Unidad2 { get; set; }
-        private String Comprar { get; set; }
+        [Key]
+        public int Id { get; set; }  // Clave primaria recomendada
+        public String Producto { get; set; }
+        public String Codigo_Producto { get; set; }
+        public double stock { get; set; }
+        public String Unidad { get; set; }
+        public double Cantidad_Minima { get; set; }
+        public String Unidad2 { get; set; }
+        public String Comprar { get; set; }
 
 
     }

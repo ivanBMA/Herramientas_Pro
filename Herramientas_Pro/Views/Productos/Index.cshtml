@@ -11,11 +11,17 @@
     td {
         margin: 2rem;
         text-align: center;
-        color: red;
+    }
+
+    .registros {
+        margin-top:1rem;
+        border: 2px solid black;
+        border-radius: 20%;
     }
 </style>    
 
 <h2>Lista de Productos :D</h2>
+
 
 <table>
     <thead>
@@ -33,7 +39,7 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+            <tr class="registros">
                 <td>@item.Producto</td>
                 <td>@item.Categoria</td>
                 <td>@item.Info</td>
@@ -42,8 +48,15 @@
                 <td>@item.Cantidad_Minima</td>
                 <td>@item.Coste_Unidad</td>
                 <td>@item.Ubicacion</td>
+                <td><a href="productos/editar/@item.Id" class="btn btn-primary">Editar</a></td>
+                <td><a href="productos/Borrar/@item.Id" class="btn btn-danger">Borrar</a></td>
+
             </tr>
         }
     </tbody>
 </table>
+
+<br />
+<a href="productos/CrearProducto" class="btn btn-primary">Crear Producto</a>
+
 
