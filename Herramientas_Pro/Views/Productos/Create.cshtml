@@ -1,0 +1,120 @@
+﻿@model Herramientas_Pro.Models.Productos
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Productos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Producto" class="control-label"></label>
+                <input asp-for="Producto" class="form-control" />
+                <span asp-validation-for="Producto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Categoria" class="control-label"></label>
+                <select class="form-select" asp-for="Categoria">
+                    <option value="">Seleccione una opción</option>
+                    <option value="TORNILLO">TORNILLO</option>
+                    <option value="GUIA">GUIA</option>
+                    <option value="PERFIL">PERFIL</option>
+                    <option value="TUERCA">TUERCA</option>
+                    <option value="BOTON">BOTON</option>
+                    <option value="REMACHE">REMACHE</option>
+                    <option value="EPI">EPI</option>
+                    <option value="INSERTO">INSERTO</option>
+                    <option value="CANTO">CANTO</option>
+                    <option value="PINZA">PINZA</option>
+                    <option value="SEPARADOR">SEPARADOR</option>
+                    <option value="ALINEADOR">ALINEADOR</option>
+                    <option value="VARILLA">VARILLA</option>
+                    <option value="VARILLA ROS">VARILLA ROS</option>
+                    <option value="PASAMANOS">PASAMANOS</option>
+                    <option value="CARGADOR">CARGADOR</option>
+                    <option value="BISAGRA">BISAGRA</option>
+                    <option value="PESTILLO">PESTILLO</option>
+                    <option value="SPRAY">SPRAY</option>
+                    <option value="ACEITE">ACEITE</option>
+                    <option value="ESMALTE">ESMALTE</option>
+                    <option value="DISOLVENTE">DISOLVENTE</option>
+                    <option value="CALIBRADO">CALIBRADO</option>
+                </select>
+                <span asp-validation-for="Categoria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Codigo_Producto" class="control-label"></label>
+                <input asp-for="Codigo_Producto" class="form-control" />
+                <span asp-validation-for="Codigo_Producto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cantidad_Minima" class="control-label"></label>
+                <input asp-for="Cantidad_Minima" class="form-control" />
+                <span asp-validation-for="Cantidad_Minima" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Unidad" class="control-label"></label>
+                <select class="form-control" asp-for="Unidad">
+                    <option value="">Seleccione una unidad</option>
+                    <option value="Unidades">Unidades</option>
+                    <option value="Paquetes">Paquetes</option>
+                    <option value="Barras">Barras</option>
+                    <option value="Metros">Metros</option>
+                    <option value="m²">m²</option>
+                    <option value="m³">m³</option>
+                    <option value="L">L</option>
+                    <option value="ml">ml</option>
+                    <option value="Tn">Tn</option>
+                    <option value="Kg">Kg</option>
+                    <option value="g">g</option>
+                    <option value="mg">mg</option>
+                    <option value="Cajas">Cajas</option>
+                    <option value="Botellas">Botellas</option>
+                    <option value="Bidones">Bidones</option>
+                    <option value="Bolsas">Bolsas</option>
+                    <option value="Tarros">Tarros</option>
+                    <option value="Latas">Latas</option>
+                    <option value="Sin Unidad">Sin Unidad</option>
+                </select>
+                <span asp-validation-for="Unidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Coste_Unidad" class="control-label"></label>
+                <input asp-for="Coste_Unidad" class="form-control" />
+                <span asp-validation-for="Coste_Unidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ubicacion" class="control-label"></label>
+                <select class="form-control" asp-for="Ubicacion">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Estanteria EPIS">Estanteria EPIS</option>
+                    <option value="Estanteria Hierro">Estanteria Hierro</option>
+                    <option value="Estanteria Inox">Estanteria Inox</option>
+                    <option value="Estanteria Aluminio">Estanteria Aluminio</option>
+                    <option value="Estanteria Guias">Estanteria Guias</option>
+                    <option value="Estanteria Tornilleria 1">Estanteria Tornilleria 1</option>
+                    <option value="Estanteria Tornilleria 2">Estanteria Tornilleria 2</option>
+                    <option value="Estanteria Tornilleria 3">Estanteria Tornilleria 3</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <span asp-validation-for="Ubicacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

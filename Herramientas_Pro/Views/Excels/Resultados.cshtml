@@ -1,0 +1,26 @@
+﻿@using System.Data
+@model System.Data.DataTable
+
+<h1>Resultados del Archivo Excel</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            @foreach (DataColumn column in Model.Columns)
+            {
+                <th>@column.ColumnName</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DataRow row in Model.Rows)
+        {
+            <tr>
+                @foreach (var cell in row.ItemArray)
+                {
+                    <td>@cell</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

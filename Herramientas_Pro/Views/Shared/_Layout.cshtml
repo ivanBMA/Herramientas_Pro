@@ -7,12 +7,24 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Herramientas_Pro.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
+
+
+<style>
+    li:hover{
+        border-bottom: 2px solid black;
+    }
+</style>
+
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light shadow fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Herramientas_Pro</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-tools"></i> Herramientas_Pro
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,45 +32,67 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark @ViewData["ActiveHome"]" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house"></i> Home
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark @ViewData["ActivePrivacy"]" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                <i class="bi bi-shield-lock"></i> Privacy
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Productos" asp-action="Index">Productos</a>
+                            <a class="nav-link text-dark @ViewData["ActiveProductos"]" asp-area="" asp-controller="Productos" asp-action="Index">
+                                <i class="bi bi-box-seam"></i> Productos
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pedidos" asp-action="Index">Pedidos</a>
+                            <a class="nav-link text-dark @ViewData["ActivePedidos"]" asp-area="" asp-controller="Pedidos" asp-action="Index">
+                                <i class="bi bi-basket"></i> Pedidos
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Inventario" asp-action="Index">Inventario</a>
+                            <a class="nav-link text-dark @ViewData["ActiveInventario"]" asp-area="" asp-controller="Inventario" asp-action="Index">
+                                <i class="bi bi-archive"></i> Inventario
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Fabricacions" asp-action="Index">Fabricacion</a>
+                            <a class="nav-link text-dark @ViewData["ActiveFabricacion"]" asp-area="" asp-controller="Fabricacions" asp-action="Index">
+                                <i class="bi bi-gear"></i> Fabricación
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Entradas_Salidas" asp-action="Index">Entradas/Salidas</a>
+                            <a class="nav-link text-dark @ViewData["ActiveEntradasSalidas"]" asp-area="" asp-controller="Entradas_Salidas" asp-action="Index">
+                                <i class="bi bi-arrow-left-right"></i> Entradas/Salidas
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Arreglos" asp-action="Index">Arreglos</a>
+                            <a class="nav-link text-dark @ViewData["ActiveArreglos"]" asp-area="" asp-controller="Arreglos" asp-action="Index">
+                                <i class="bi bi-wrench"></i> Arreglos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @ViewData["ActiveExcels"]" asp-area="" asp-controller="Excels" asp-action="Index">
+                                <i class="bi btn-outline-info"></i> Excels
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container mt-5 pt-5">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Herramientas_Pro - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-light bg-dark py-3">
+        <div class="container text-center">
+            &copy; 2024 - Herramientas_Pro - <a class="text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

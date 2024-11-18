@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Entradas Salidas</h1>
+<h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,37 +13,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Proyecto)
+                @Html.DisplayNameFor(model => model.Codigo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Cliente)
+                @Html.DisplayNameFor(model => model.Producto)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Diseño)
+                @Html.DisplayNameFor(model => model.Cantidad)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Vidrios)
+                @Html.DisplayNameFor(model => model.Unidad)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Baranda)
+                @Html.DisplayNameFor(model => model.Fecha)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Zanca)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Montajes)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Plotters)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Peldaños)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Guia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tornilleria)
+                @Html.DisplayNameFor(model => model.Firma)
             </th>
             <th></th>
         </tr>
@@ -52,37 +37,22 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Proyecto)
+                @Html.DisplayFor(modelItem => item.Codigo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Cliente)
+                @Html.DisplayFor(modelItem => item.Producto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Diseño)
+                @Html.DisplayFor(modelItem => item.Cantidad)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Vidrios)
+                @Html.DisplayFor(modelItem => item.Unidad)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Baranda)
+                @Html.DisplayFor(modelItem => item.Fecha)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Zanca)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Montajes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Plotters)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Peldaños)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Guia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tornilleria)
+                @Html.DisplayFor(modelItem => item.Firma)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

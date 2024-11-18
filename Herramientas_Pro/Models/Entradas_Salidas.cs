@@ -6,17 +6,13 @@ namespace Herramientas_Pro.Models
     {
         [Key]
         public int Id { get; set; }  // Clave primaria recomendada
-        public String Proyecto { get; set; }
-        public String Cliente { get; set; }
-        public String Diseño { get; set; }
-        public String Vidrios { get; set; }
-        public String Baranda { get; set; }
-        public String Zanca { get; set; }
-        public String Montajes { get; set; }
-        public String Plotters { get; set; }
-        public String Peldaños { get; set; }
-        public String Guia { get; set; }
-        public String Tornilleria { get; set; }
+        public String Codigo { get; set; }
+        public String Producto { get; set; }
+        public Double Cantidad { get; set; }
+        public String Unidad { get; set; }
+        public DateTime Fecha { get; set; }
+        public String Firma { get; set; }
+
 
     }
 }

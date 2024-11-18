@@ -68,6 +68,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNfU2FsaWRhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Excels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Excels/Resultados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxzXFJlc3VsdGFkb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Fabricacions/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFicmljYWNpb25zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -136,16 +144,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Productos/CrearProducto.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXENyZWFyUHJvZHVjdG8uY3NodG1s
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Productos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Productos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Productos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Productos/Editar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVkaXRhci5jc2h0bWw=
+[C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Productos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Iván/Documents/Domi/Herramientas_Pro/Herramientas_Pro/Views/Productos/Index.cshtml]

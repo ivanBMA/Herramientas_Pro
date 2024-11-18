@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Cargar Excel";
+}
+
+<h1>Cargar Archivo Excel</h1>
+
+<form asp-action="CargarExcel" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="excelFile" class="form-label">Selecciona un archivo Excel</label>
+        <input type="file" class="form-control" id="excelFile" name="excelFile" accept=".xlsx, .xls" />
+    </div>
+    <button type="submit" class="btn btn-primary">Cargar</button>
+</form>

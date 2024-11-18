@@ -1,6 +1,5 @@
-using System.Diagnostics;
-using Herramientas_Pro.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace Herramientas_Pro.Controllers
 {
@@ -15,19 +14,10 @@ namespace Herramientas_Pro.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Este es un mensaje informativo en la acción Index.");
+            _logger.LogDebug("Este es un mensaje de depuración.");
+
             return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

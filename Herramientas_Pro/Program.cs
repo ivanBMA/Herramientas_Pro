@@ -6,6 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Configuración para enviar logs a la depuración y consola
+builder.Logging.ClearProviders(); // Limpia configuraciones previas
+builder.Logging.AddConsole(); // Muestra logs en la consola
+builder.Logging.AddDebug();   // Muestra logs en la ventana de depuración (Visual Studio)
+
+
 // Agrega esta línea para configurar el servicio de DbContext con SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -64,6 +70,11 @@ app.MapControllerRoute(
     defaults: new { controller = "Arreglos" }
 );
 
+app.MapControllerRoute(
+    name: "excels",
+    pattern: "excels/{action=Index}/{id?}",
+    defaults: new { controller = "Excels" }
+);
 
 app.MapControllerRoute(
     name: "default",

@@ -1,62 +1,71 @@
 ﻿@model IEnumerable<Herramientas_Pro.Models.Productos>
 
-<style>
-    th{
-        margin:2rem;
-        text-align:center;
-        color:blue;
-        border-left:2px solid black;
-    }
+@{
+    ViewData["Title"] = "Index";
+}
 
-    td {
-        margin: 2rem;
-        text-align: center;
-    }
+<h1>Index</h1>
 
-    .registros {
-        margin-top:1rem;
-        border: 2px solid black;
-        border-radius: 20%;
-    }
-</style>    
-
-<h2>Lista de Productos :D</h2>
-
-
-<table>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
     <thead>
         <tr>
-            <th>Producto</th>
-            <th>Categoría</th>
-            <th>Información</th>
-            <th>Especificación</th>
-            <th>Código de Producto</th>
-            <th>Cantidad Mínima</th>
-            <th>Unidad</th>
-            <th>Ubicación</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Producto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Codigo_Producto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cantidad_Minima)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Coste_Unidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ubicacion)
+            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
-            <tr class="registros">
-                <td>@item.Producto</td>
-                <td>@item.Categoria</td>
-                <td>@item.Info</td>
-                <td>@item.Especificacion</td>
-                <td>@item.Codigo_Producto</td>
-                <td>@item.Cantidad_Minima</td>
-                <td>@item.Coste_Unidad</td>
-                <td>@item.Ubicacion</td>
-                <td><a href="productos/editar/@item.Id" class="btn btn-primary">Editar</a></td>
-                <td><a href="productos/Borrar/@item.Id" class="btn btn-danger">Borrar</a></td>
-
-            </tr>
-        }
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo_Producto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad_Minima)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Unidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Coste_Unidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ubicacion)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
     </tbody>
 </table>
-
-<br />
-<a href="productos/CrearProducto" class="btn btn-primary">Crear Producto</a>
-
-

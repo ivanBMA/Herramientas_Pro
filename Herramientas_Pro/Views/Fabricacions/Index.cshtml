@@ -4,92 +4,58 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Fabricacion</h1>
+<h1 class="my-4 text-center">Fabricación</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
+<p class="text-end">
+    <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Crear Nuevo</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Proyecto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cliente)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Diseño)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Vidrio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Baranda)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zancas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Montajes)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Plotters)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Peldaños)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Guia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tornilleria)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Proyecto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cliente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Diseño)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Vidrio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Baranda)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Zancas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Montajes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Plotters)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Peldaños)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Guia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tornilleria)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Proyecto)</th>
+                <th>@Html.DisplayNameFor(model => model.Cliente)</th>
+                <th>@Html.DisplayNameFor(model => model.Diseño)</th>
+                <th>@Html.DisplayNameFor(model => model.Vidrio)</th>
+                <th>@Html.DisplayNameFor(model => model.Baranda)</th>
+                <th>@Html.DisplayNameFor(model => model.Zancas)</th>
+                <th>@Html.DisplayNameFor(model => model.Montajes)</th>
+                <th>@Html.DisplayNameFor(model => model.Plotters)</th>
+                <th>@Html.DisplayNameFor(model => model.Peldaños)</th>
+                <th>@Html.DisplayNameFor(model => model.Guia)</th>
+                <th>@Html.DisplayNameFor(model => model.Tornilleria)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Proyecto)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Cliente)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Diseño)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Vidrio)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Baranda)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Zancas)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Montajes)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Plotters)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Peldaños)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Guia)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Tornilleria)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                            <i class="bi bi-eye"></i> Detalles
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
