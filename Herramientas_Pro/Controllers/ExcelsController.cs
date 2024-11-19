@@ -151,8 +151,11 @@ public class ExcelsController : Controller
                     }
                     else
                     {
-                        // Agregar las filas a la tabla
-                        dataTable.Rows.Add(row.Cells().Select(c => c.Value.ToString()).ToArray());
+                        // Verificar si la fila tiene al menos una celda con contenido
+                        if (row.Cells().Any(c => !string.IsNullOrWhiteSpace(c.Value.ToString())))
+                        {
+                            dataTable.Rows.Add(row.Cells().Select(c => c.Value.ToString()).ToArray());
+                        }
                     }
                 }
             }
@@ -160,4 +163,5 @@ public class ExcelsController : Controller
 
         return dataTable;
     }
+
 }

@@ -35,6 +35,18 @@ namespace Herramientas_Pro.Controllers
                 "CategoriaAsc" => productos.OrderBy(p => p.Categoria),
                 "CategoriaDesc" => productos.OrderByDescending(p => p.Categoria),
 
+                "Codigo_ProductoAsc" => productos.OrderBy(p => p.Codigo_Producto),
+                "Codigo_ProductoDesc" => productos.OrderByDescending(p => p.Codigo_Producto),
+
+                "Cantidad_MinimaAsc" => productos.OrderBy(p => p.Cantidad_Minima),
+                "Cantidad_MinimaDesc" => productos.OrderByDescending(p => p.Cantidad_Minima),
+
+                "UnidadAsc" => productos.OrderBy(p => p.Unidad),
+                "UnidadDesc" => productos.OrderByDescending(p => p.Unidad),
+
+                "Coste_UnidadAsc" => productos.OrderBy(p => p.Coste_Unidad),
+                "Coste_UnidadDesc" => productos.OrderByDescending(p => p.Coste_Unidad),
+
                 "UbicacionAsc" => productos.OrderBy(p => p.Ubicacion),
                 "UbicacionDesc" => productos.OrderByDescending(p => p.Ubicacion),
                 _ => productos

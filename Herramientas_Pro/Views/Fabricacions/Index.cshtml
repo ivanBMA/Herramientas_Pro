@@ -6,9 +6,38 @@
 
 <h1 class="my-4 text-center">Fabricación</h1>
 
-<p class="text-end">
-    <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Crear Nuevo</a>
-</p>
+<div class="d-flex justify-content-between align-items-center my-3">
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+    <div class="btn-group" role="group" aria-label="Ordenar por">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Ordenar por
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProyectoAsc">Proyecto (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProyectoDesc">Proyecto (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ClienteAsc">Cliente (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ClienteDesc">Cliente (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="DiseñoAsc">Diseño (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="DiseñoDesc">Diseño (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="VidrioAsc">Vidrio (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="VidrioDesc">Vidrio (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="BarandaAsc">Baranda (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="BarandaDesc">Baranda (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ZancasAsc">Zancas (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ZancasDesc">Zancas (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="MontajesAsc">Montajes (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="MontajesDesc">Montajes (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="PlottersAsc">Plotters (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="PlottersDesc">Plotters (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="PeldañosAsc">Peldaños (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="PeldañosDesc">Peldaños (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="GuiaAsc">Guia (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="GuiaDesc">Guia (Descendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="TornilleriaAsc">Tornilleria (Ascendente)</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-orden="TornilleriaDesc">Tornilleria (Descendente)</a></li>
+        </ul>
+    </div>
+</div>
 
 <div class="table-responsive">
     <table class="table table-striped table-hover align-middle">

@@ -19,9 +19,48 @@ namespace Herramientas_Pro.Controllers
         }
 
         // GET: Fabricacions
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string orden = "nombreAsc")
         {
-            return View(await _context.Fabricacion.ToListAsync());
+            var fabricacion = _context.Fabricacion.AsQueryable();
+
+            fabricacion = orden switch
+            {
+                "ProyectoAsc" => fabricacion.OrderBy(p => p.Proyecto),
+                "ProyectoDesc" => fabricacion.OrderByDescending(p => p.Proyecto),
+
+                "ClienteAsc" => fabricacion.OrderBy(p => p.Cliente),
+                "ClienteDesc" => fabricacion.OrderByDescending(p => p.Cliente),
+
+                "DiseñoAsc" => fabricacion.OrderBy(p => p.Diseño),
+                "DiseñoDesc" => fabricacion.OrderByDescending(p => p.Diseño),
+
+                "VidrioAsc" => fabricacion.OrderBy(p => p.Vidrio),
+                "VidrioDesc" => fabricacion.OrderByDescending(p => p.Vidrio),
+
+                "BarandaAsc" => fabricacion.OrderBy(p => p.Baranda),
+                "BarandaDesc" => fabricacion.OrderByDescending(p => p.Baranda),
+
+                "ZancasAsc" => fabricacion.OrderBy(p => p.Zancas),
+                "ZancasDesc" => fabricacion.OrderByDescending(p => p.Zancas),
+
+                "MontajesAsc" => fabricacion.OrderBy(p => p.Montajes),
+                "MontajesDesc" => fabricacion.OrderByDescending(p => p.Montajes),
+
+                "PlottersAsc" => fabricacion.OrderBy(p => p.Plotters),
+                "PlottersDesc" => fabricacion.OrderByDescending(p => p.Plotters),
+
+                "PeldañosAsc" => fabricacion.OrderBy(p => p.Peldaños),
+                "PeldañosDesc" => fabricacion.OrderByDescending(p => p.Peldaños),
+
+                "GuiaAsc" => fabricacion.OrderBy(p => p.Guia),
+                "GuiaDesc" => fabricacion.OrderByDescending(p => p.Guia),
+
+                "TornilleriaAsc" => fabricacion.OrderBy(p => p.Tornilleria),
+                "TornilleriaDesc" => fabricacion.OrderByDescending(p => p.Tornilleria),
+                _ => fabricacion
+            };
+
+            return View(fabricacion.ToList());
         }
 
         // GET: Fabricacions/Details/5

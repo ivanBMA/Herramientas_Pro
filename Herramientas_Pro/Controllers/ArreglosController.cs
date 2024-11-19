@@ -53,7 +53,7 @@ namespace Herramientas_Pro.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Fecha,Responsable")] Arreglos arreglos)
+        public async Task<IActionResult> Create([Bind("Id,Proyecto,Cliente,Diseño,Vidrios,Baranda,Zancas,Montajes,Peldaños,Guia,Tornilleria,Otros,Estado,Cita,Fecha,Responsable")] Arreglos arreglos)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace Herramientas_Pro.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Fecha,Responsable")] Arreglos arreglos)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Proyecto,Cliente,Diseño,Vidrios,Baranda,Zancas,Montajes,Peldaños,Guia,Tornilleria,Otros,Estado,Cita,Fecha,Responsable")] Arreglos arreglos)
         {
             if (id != arreglos.Id)
             {
