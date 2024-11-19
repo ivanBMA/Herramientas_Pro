@@ -2,6 +2,7 @@
 using DocumentFormat.OpenXml.Spreadsheet;
 using Herramientas_Pro.Controllers;
 using Herramientas_Pro.Models;
+using Herramientas_Pro.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -10,12 +11,16 @@ using System.Data;
 public class ExcelsController : Controller
 {
     private readonly ILogger<ExcelsController> _logger;
+    private readonly ProductosService _productosService;
+    private readonly FabricacionsService _fabricacionsService;
 
-    public ExcelsController(ILogger<ExcelsController> logger)
+    // Constructor explícito
+    public ExcelsController(ILogger<ExcelsController> logger, ProductosService productosService, FabricacionsService fabricacionsService)
     {
-        _logger = logger;
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        _productosService = productosService ?? throw new ArgumentNullException(nameof(productosService));
+        _fabricacionsService = fabricacionsService ?? throw new ArgumentNullException(nameof(fabricacionsService));
     }
-
 
     public IActionResult Index()
     {
@@ -36,21 +41,26 @@ public class ExcelsController : Controller
             // Leer el archivo Excel
             DataTable dataTable = LeerExcel(excelFile);
 
-            // Aquí puedes procesar o guardar los datos del DataTable
-            // Por ejemplo: pasar los datos a la vista o guardarlos en la base de datos.
-            // Obtener las propiedades del modelo
-            /*
-            var propiedadesModelo = typeof(Productos).GetProperties().Select(p => p.Name).ToHashSet();
+            var propiedadesModeloProductos = typeof(Productos).GetProperties().Select(p => p.Name).ToHashSet();
+            var propiedadesModeloFabricacion = typeof(Fabricacion).GetProperties().Select(p => p.Name).ToHashSet();
+
             var contador = 0;
-            var contadorB = 0;
+            var contadorProductos = 0;
+            var contadorFabricacion = 0;
+
             Console.WriteLine("Comprobando columnas:");
 
             foreach (DataColumn column in dataTable.Columns)
             {
-                if (propiedadesModelo.Contains(column.ColumnName))
+                if (propiedadesModeloProductos.Contains(column.ColumnName))
                 {
-                    _logger.LogInformation($"✔️ La columna '{column.ColumnName}' coincide con el modelo.");
-                    contadorB++;
+                    _logger.LogInformation($"✔️ La columna '{column.ColumnName}' coincide con el modelo Productos.");
+                    contadorProductos++;
+                }
+                if (propiedadesModeloFabricacion.Contains(column.ColumnName))
+                {
+                    _logger.LogInformation($"✔️ La columna '{column.ColumnName}' coincide con el modelo Fabricacion.");
+                    contadorFabricacion++;
                 }
                 else
                 {
@@ -58,30 +68,55 @@ public class ExcelsController : Controller
                 }
                 contador++;
             }
-            _logger.LogInformation("contador " + contador + " Bien " + contadorB);
+            _logger.LogInformation("contador " + contador + " Bien " + contadorProductos);
 
-            if (contadorB == contador) {
+
+            if (contadorProductos == contador || contadorFabricacion == contador) {
                 _logger.LogInformation("Existe la tabla a la que hace referencia el excel");
                 
 
                 foreach(DataRow row in dataTable.Rows){
-                    Productos producto = new Productos
-                    {
-                        Producto = row["Producto"].ToString(),
-                        Categoria = row["Categoria"].ToString(),
-                        Codigo_Producto = row["Codigo_Producto"].ToString(),
-                        Cantidad_Minima = Convert.ToDecimal(row["Cantidad_Minima"]),
-                        Unidad = row["Unidad"].ToString(),
-                        Coste_Unidad = Convert.ToDecimal(row["Coste_Unidad"]),
-                        Ubicacion = row["Ubicacion"].ToString()
-                    };
 
-                    //_context.Add(producto);
-                    //_context.SaveChangesAsync();
+                    if (contadorProductos == contador)
+                    {
+                        Productos producto = new Productos
+                        {
+                            Producto = row["Producto"]?.ToString() ?? string.Empty,
+                            Categoria = row["Categoria"]?.ToString() ?? string.Empty,
+                            Codigo_Producto = row["Codigo_Producto"]?.ToString() ?? string.Empty,
+                            Cantidad_Minima = decimal.TryParse(row["Cantidad_Minima"]?.ToString(), out var cantidadMinima) ? cantidadMinima : 0,
+                            Unidad = row["Unidad"]?.ToString() ?? string.Empty,
+                            Coste_Unidad = decimal.TryParse(row["Coste_Unidad"]?.ToString(), out var costeUnidad) ? costeUnidad : 0,
+                            Ubicacion = row["Ubicacion"]?.ToString() ?? string.Empty
+                        };
+
+                        _logger.LogInformation("------------------------- Producto " + producto.ToString());
+                        _productosService.CrearProducto(producto);
+                    }
+                    else {
+                        Fabricacion fabricacion = new Fabricacion
+                        {
+                            Proyecto = row["Proyecto"]?.ToString() ?? string.Empty,
+                            Cliente = row["Cliente"]?.ToString() ?? string.Empty,
+                            Diseño = row["Diseño"]?.ToString() ?? string.Empty,
+                            Vidrio = row["Vidrio"]?.ToString() ?? string.Empty,
+                            Baranda = row["Baranda"]?.ToString() ?? string.Empty,
+                            Zancas = row["Zancas"]?.ToString() ?? string.Empty,
+                            Montajes = row["Montajes"]?.ToString() ?? string.Empty,
+                            Plotters = row["Plotters"]?.ToString() ?? string.Empty,
+                            Peldaños = row["Peldaños"]?.ToString() ?? string.Empty,
+                            Guia = row["Guia"]?.ToString() ?? string.Empty,
+                            Tornilleria = row["Tornilleria"]?.ToString() ?? string.Empty,
+                        };
+
+                        _logger.LogInformation("------------------------- Fabricacion ");
+                        _fabricacionsService.CrearFabricacion(fabricacion);
+                    }
                 }
 
             }
-            */
+
+            
 
             return View("Resultados", dataTable); // Muestra los datos en una nueva vista
         }

@@ -1,4 +1,5 @@
 using Herramientas_Pro.Models;
+using Herramientas_Pro.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,9 @@ builder.Services.AddControllersWithViews();
 builder.Logging.ClearProviders(); // Limpia configuraciones previas
 builder.Logging.AddConsole(); // Muestra logs en la consola
 builder.Logging.AddDebug();   // Muestra logs en la ventana de depuración (Visual Studio)
+
+builder.Services.AddScoped<ProductosService>(); // Registra el servicio como Scoped
+builder.Services.AddScoped<FabricacionsService>(); // Registra el servicio como Scoped
 
 
 // Agrega esta línea para configurar el servicio de DbContext con SQL Server

@@ -1,71 +1,69 @@
 ﻿@model IEnumerable<Herramientas_Pro.Models.Productos>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Listado de Productos";
 }
 
-<h1>Index</h1>
+<div class="container mt-4">
+    <h1 class="text-center">@ViewData["Title"]</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Producto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Categoria)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Codigo_Producto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cantidad_Minima)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Unidad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Coste_Unidad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Ubicacion)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Producto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categoria)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Codigo_Producto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cantidad_Minima)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Unidad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Coste_Unidad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ubicacion)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="d-flex justify-content-between align-items-center my-3">
+        <a asp-action="Create" class="btn btn-primary">Crear Nuevo Producto</a>
+        <div class="btn-group" role="group" aria-label="Ordenar por">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Ordenar por
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProductoAsc">Producto (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProductoDesc">Producto (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CategoriaAsc">Categoría (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CategoriaDesc">Categoría (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="UbicacionAsc">Ubicación (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="UbicacionDesc">Ubicación (Descendente)</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Producto)</th>
+                <th>@Html.DisplayNameFor(model => model.Categoria)</th>
+                <th>@Html.DisplayNameFor(model => model.Codigo_Producto)</th>
+                <th>@Html.DisplayNameFor(model => model.Cantidad_Minima)</th>
+                <th>@Html.DisplayNameFor(model => model.Unidad)</th>
+                <th>@Html.DisplayNameFor(model => model.Coste_Unidad)</th>
+                <th>@Html.DisplayNameFor(model => model.Ubicacion)</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="8" class="text-center">No hay productos disponibles.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Producto)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Categoria)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Codigo_Producto)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Cantidad_Minima)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Unidad)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Coste_Unidad)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Ubicacion)</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Detalles</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

@@ -6,22 +6,41 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Herramientas_Pro.Models;
+using Herramientas_Pro.Services;
 
 namespace Herramientas_Pro.Controllers
 {
     public class ProductosController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly ProductosService _productosService;
 
-        public ProductosController(ApplicationDbContext context)
+
+        public ProductosController(ApplicationDbContext context, ProductosService productosService)
         {
             _context = context;
+            _productosService = productosService;
         }
 
         // GET: Productos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string orden = "nombreAsc")
         {
-            return View(await _context.Productos.ToListAsync());
+            var productos = _context.Productos.AsQueryable();
+
+            productos = orden switch
+            {
+                "ProductoAsc" => productos.OrderBy(p => p.Producto),
+                "ProductoDesc" => productos.OrderByDescending(p => p.Producto),
+
+                "CategoriaAsc" => productos.OrderBy(p => p.Categoria),
+                "CategoriaDesc" => productos.OrderByDescending(p => p.Categoria),
+
+                "UbicacionAsc" => productos.OrderBy(p => p.Ubicacion),
+                "UbicacionDesc" => productos.OrderByDescending(p => p.Ubicacion),
+                _ => productos
+            };
+
+            return View(productos.ToList());
         }
 
         // GET: Productos/Details/5
