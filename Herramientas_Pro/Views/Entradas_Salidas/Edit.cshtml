@@ -27,6 +27,10 @@
                 <label asp-for="Cantidad" class="control-label"></label>
                 <input asp-for="Cantidad" class="form-control" />
                 <span asp-validation-for="Cantidad" class="text-danger"></span>
+                @if (ViewBag.ShowDetails)
+                {
+                    <span asp-validation-for="Unidad" class="text-danger">No puedes retirar mas de lo que hay en el Stock</span>
+                }
             </div>
             <div class="form-group">
                 <label asp-for="Unidad" class="control-label"></label>

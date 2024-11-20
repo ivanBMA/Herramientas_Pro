@@ -14,12 +14,15 @@ namespace Herramientas_Pro.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly ProductosService _productosService;
+        private readonly ILogger<ExcelsController> _logger;
+        private readonly InventarioService _inventarioService;
 
 
-        public ProductosController(ApplicationDbContext context, ProductosService productosService)
+        public ProductosController(ApplicationDbContext context, ProductosService productosService, InventarioService inventarioService)
         {
             _context = context;
-            _productosService = productosService;
+            _productosService = productosService ?? throw new ArgumentNullException(nameof(productosService));
+            _inventarioService = inventarioService ?? throw new ArgumentNullException(nameof(inventarioService));
         }
 
         // GET: Productos
@@ -90,6 +93,19 @@ namespace Herramientas_Pro.Controllers
             {
                 _context.Add(productos);
                 await _context.SaveChangesAsync();
+
+                Inventario inventario = new() {
+                    Producto        = productos.Producto,
+                    Codigo_Producto = productos.Codigo_Producto,
+                    stock           = 0,
+                    Unidad          = productos.Unidad,
+                    Cantidad_Minima = (double)productos.Cantidad_Minima,
+                    Unidad2         = productos.Unidad,
+                    Comprar         = (double)productos.Cantidad_Minima
+                };
+
+                _inventarioService.CrearInventario(inventario);
+
                 return RedirectToAction(nameof(Index));
             }
             return View(productos);
@@ -127,8 +143,25 @@ namespace Herramientas_Pro.Controllers
             {
                 try
                 {
+                    var productosAntiguo = _context.Productos.FirstOrDefault(e => e.Id == productos.Id);
                     _context.Update(productos);
                     await _context.SaveChangesAsync();
+
+                    /*
+                    Inventario inventario = new()
+                    {
+                        Producto = productos.Producto,
+                        Codigo_Producto = productos.Codigo_Producto,
+                        stock = 0,
+                        Unidad = productos.Unidad,
+                        Cantidad_Minima = (double)productos.Cantidad_Minima,
+                        Unidad2 = productos.Unidad,
+                        Comprar = (double)productos.Cantidad_Minima
+                    };
+
+                    _inventarioService.EditarInventario(inventario, productosAntiguo!.Producto);
+                    */
+                    
                 }
                 catch (DbUpdateConcurrencyException)
                 {

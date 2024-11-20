@@ -14,6 +14,7 @@ builder.Logging.AddDebug();   // Muestra logs en la ventana de depuración (Visua
 
 builder.Services.AddScoped<ProductosService>(); // Registra el servicio como Scoped
 builder.Services.AddScoped<FabricacionsService>(); // Registra el servicio como Scoped
+builder.Services.AddScoped<InventarioService>(); // Registra el servicio como Scoped
 
 
 // Agrega esta línea para configurar el servicio de DbContext con SQL Server
