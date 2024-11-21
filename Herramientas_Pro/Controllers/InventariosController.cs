@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Herramientas_Pro.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Herramientas_Pro.Controllers
 {
+    [Authorize]
+
     public class InventariosController : Controller
     {
         private readonly ApplicationDbContext _context;

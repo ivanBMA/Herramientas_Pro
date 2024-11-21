@@ -3,10 +3,13 @@ using DocumentFormat.OpenXml.Spreadsheet;
 using Herramientas_Pro.Controllers;
 using Herramientas_Pro.Models;
 using Herramientas_Pro.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Data;
+
+[Authorize]
 
 public class ExcelsController : Controller
 {

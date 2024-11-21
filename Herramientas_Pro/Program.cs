@@ -1,5 +1,7 @@
 using Herramientas_Pro.Models;
 using Herramientas_Pro.Services;
+using Herramientas_Pro.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +23,10 @@ builder.Services.AddScoped<InventarioService>(); // Registra el servicio como Sc
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders(); // Esto es opcional si usas tokens de restablecimiento de contraseña
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,12 +39,14 @@ if (!app.Environment.IsDevelopment())
 
 
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication(); // Necesario para manejar autenticación
+app.UseAuthorization();  // Necesario para manejar autorización
 
 app.MapControllerRoute(
     name: "productos",

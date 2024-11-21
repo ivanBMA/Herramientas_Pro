@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Herramientas_Pro.Models;
 using Herramientas_Pro.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Herramientas_Pro.Controllers
 {
+    [Authorize]
+
     public class ProductosController : Controller
     {
         private readonly ApplicationDbContext _context;
