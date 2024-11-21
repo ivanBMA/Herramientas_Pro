@@ -18,6 +18,12 @@ namespace Herramientas_Pro.Services
             {
                 _context.Inventario.Add(inventario);
                 _context.SaveChanges();
+                //-->
+                inventario.Comprar = inventario.ActualizarComprar(inventario, 0);
+
+                _context.Inventario.Update(inventario);
+                _context.SaveChanges();
+                //-->
                 return true;
             }
             catch (Exception ex)
@@ -28,20 +34,40 @@ namespace Herramientas_Pro.Services
             }
         }
 
-        public bool EditarInventario(Inventario inventarioNuevo, String Producto)
+        public bool EditarInventario(Inventario inventarioNuevo, string Codigo_Producto)
         {
             try
             {
-                Inventario inventario = _context.Inventario.FirstOrDefault(e => e.Producto == Producto);
+                var inventario = _context.Inventario.FirstOrDefault(e => e.Codigo_Producto == Codigo_Producto);
+                if (inventario == null)
+                {
+                    Console.WriteLine($"El producto con Codigo_Producto '{Codigo_Producto}' no se encontró en el inventario.");
+                    return false;
+                }
 
-                inventario.Producto = inventarioNuevo.Producto;
-                inventario.Codigo_Producto = inventarioNuevo.Codigo_Producto;
-                inventario.Unidad = inventarioNuevo.Unidad;
-                inventario.Cantidad_Minima = inventarioNuevo.Cantidad_Minima;
-                inventario.Unidad2 = inventarioNuevo.Unidad2;
+                // Actualizar únicamente los valores que han cambiado
+                if (!string.IsNullOrEmpty(inventarioNuevo.Producto) && inventarioNuevo.Producto != inventario.Producto)
+                    inventario.Producto = inventarioNuevo.Producto;
+
+                if (!string.IsNullOrEmpty(inventarioNuevo.Codigo_Producto) && inventarioNuevo.Codigo_Producto != inventario.Codigo_Producto)
+                    inventario.Codigo_Producto = inventarioNuevo.Codigo_Producto;
+
+                if (!string.IsNullOrEmpty(inventarioNuevo.Unidad) && inventarioNuevo.Unidad != inventario.Unidad)
+                    inventario.Unidad = inventarioNuevo.Unidad;
+
+                if (inventarioNuevo.Cantidad_Minima > 0 && inventarioNuevo.Cantidad_Minima != inventario.Cantidad_Minima)
+                    inventario.Cantidad_Minima = inventarioNuevo.Cantidad_Minima;
+
+                if (!string.IsNullOrEmpty(inventarioNuevo.Unidad2) && inventarioNuevo.Unidad2 != inventario.Unidad2)
+                    inventario.Unidad2 = inventarioNuevo.Unidad2;
+
+                _context.SaveChanges();
+                //-->
+                inventario.Comprar = inventario.ActualizarComprar(inventario, 0);
 
                 _context.Inventario.Update(inventario);
                 _context.SaveChanges();
+                //-->
                 return true;
             }
             catch (Exception ex)
@@ -51,6 +77,7 @@ namespace Herramientas_Pro.Services
                 return false;
             }
         }
+
 
         public bool BorrarInventario(Inventario inventario)
         {

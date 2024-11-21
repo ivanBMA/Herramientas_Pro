@@ -16,6 +16,10 @@
                 <label asp-for="Codigo" class="control-label"></label>
                 <input asp-for="Codigo" class="form-control" />
                 <span asp-validation-for="Codigo" class="text-danger"></span>
+                @if (ViewBag.existe)
+                {
+                    <span asp-validation-for="Unidad" class="text-danger">No existe ningun elemento con ese codigo en el Inventario</span>
+                }
             </div>
             <div class="form-group">
                 <label asp-for="Producto" class="control-label"></label>

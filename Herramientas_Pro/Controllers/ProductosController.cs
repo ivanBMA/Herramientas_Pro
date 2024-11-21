@@ -143,24 +143,22 @@ namespace Herramientas_Pro.Controllers
             {
                 try
                 {
-                    var productosAntiguo = _context.Productos.FirstOrDefault(e => e.Id == productos.Id);
+                    //var productosAntiguo = _context.Productos.FirstOrDefault(e => e.Id == productos.Id);
                     _context.Update(productos);
                     await _context.SaveChangesAsync();
 
-                    /*
+                    
                     Inventario inventario = new()
                     {
                         Producto = productos.Producto,
                         Codigo_Producto = productos.Codigo_Producto,
-                        stock = 0,
                         Unidad = productos.Unidad,
                         Cantidad_Minima = (double)productos.Cantidad_Minima,
                         Unidad2 = productos.Unidad,
-                        Comprar = (double)productos.Cantidad_Minima
                     };
 
-                    _inventarioService.EditarInventario(inventario, productosAntiguo!.Producto);
-                    */
+                    _inventarioService.EditarInventario(inventario, productos.Codigo_Producto);
+                    
                     
                 }
                 catch (DbUpdateConcurrencyException)

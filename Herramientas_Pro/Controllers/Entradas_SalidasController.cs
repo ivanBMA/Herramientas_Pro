@@ -45,6 +45,7 @@ namespace Herramientas_Pro.Controllers
         public IActionResult Create()
         {
             ViewBag.ShowDetails = false;
+            ViewBag.existe = false;
             return View();
         }
 
@@ -57,17 +58,28 @@ namespace Herramientas_Pro.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (ValidadorCantidad(entradas_Salidas))
+                if (comprovarExistencia(entradas_Salidas))
                 {
-                    _context.Add(entradas_Salidas);
-                    await _context.SaveChangesAsync();
-                    ActualizarInventario(entradas_Salidas);
-                    return RedirectToAction(nameof(Index));
+                    if (ValidadorCantidad(entradas_Salidas))
+                    {
+                        _context.Add(entradas_Salidas);
+                        await _context.SaveChangesAsync();
+                        ActualizarInventario(entradas_Salidas);
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        ViewBag.existe = false;
+                        ViewBag.ShowDetails = true;
+                        View(entradas_Salidas);
+                    }
                 }
                 else {
-                    ViewBag.ShowDetails = true;
+                    ViewBag.ShowDetails = false;
+                    ViewBag.existe = true;
                     View(entradas_Salidas);
                 }
+                
             }
             return View(entradas_Salidas);
         }
@@ -193,15 +205,23 @@ namespace Herramientas_Pro.Controllers
         {
             // Buscar el producto en el inventario
             var inventario = _context.Inventario.FirstOrDefault(i => i.Codigo_Producto == entradaSalida.Codigo);
-
-            if (inventario != null)
-            {
+            
                 var resultado = (inventario.stock + entradaSalida.Cantidad);
                 if (resultado >= 0)
                 {
                     return true;
                 }
-                
+
+            return false;
+        }
+        private Boolean comprovarExistencia(Entradas_Salidas entradaSalida)
+        {
+            // Buscar el producto en el inventario
+            var inventario = _context.Inventario.FirstOrDefault(i => i.Codigo_Producto == entradaSalida.Codigo);
+
+            if (inventario != null)
+            {
+                return true;
             }
 
             return false;
