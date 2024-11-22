@@ -3,6 +3,7 @@ using Herramientas_Pro.Services;
 using Herramientas_Pro.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ builder.Logging.AddDebug();   // Muestra logs en la ventana de depuración (Visua
 builder.Services.AddScoped<ProductosService>(); // Registra el servicio como Scoped
 builder.Services.AddScoped<FabricacionsService>(); // Registra el servicio como Scoped
 builder.Services.AddScoped<InventarioService>(); // Registra el servicio como Scoped
+builder.Services.AddTransient<IEmailSender, EmailSender>();
+
 
 
 // Agrega esta línea para configurar el servicio de DbContext con SQL Server

@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\excels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\excels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\controllers\\excelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\controllers\\excelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -26,56 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Herramientas_Pro\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Herramientas_Pro\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wCsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T09:15:15.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExcelsController.cs",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\ExcelsController.cs",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Controllers\\ExcelsController.cs",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\ExcelsController.cs",
-              "RelativeToolTip": "Herramientas_Pro\\Controllers\\ExcelsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAswDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T09:12:52.718Z",
+              "WhenOpened": "2024-11-22T10:49:51.881Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Excels\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Excels\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Excels\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Excels\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T09:07:58.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAADkAAACXAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAGEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-22T08:34:31.639Z",
               "EditorCaption": ""

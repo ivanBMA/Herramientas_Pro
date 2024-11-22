@@ -92,10 +92,16 @@
                             </div>
 
                             <div class="card-body d-flex justify-content-end align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark " asp-area="">
+                                        <i class="bi btn-outline-info"></i> @User.Identity.Name
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="card-body d-flex justify-content-end align-items-center">
                                 <form asp-action="Logout" asp-controller="Account" method="post" class="form-inline">
                                     <button type="submit" class="btn btn-danger">Logout</button>
                                 </form>
-                                
                             </div>
                         }
                         else
