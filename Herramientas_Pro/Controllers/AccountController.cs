@@ -20,6 +20,7 @@ namespace Herramientas_Pro.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+            ViewBag.login = false;
             return View();
         }
 
@@ -40,6 +41,7 @@ namespace Herramientas_Pro.Controllers
                     ModelState.AddModelError(string.Empty, "Intento de inicio de sesión inválido.");
                 }
             }
+            ViewBag.login = true;
             return View(model);
         }
 

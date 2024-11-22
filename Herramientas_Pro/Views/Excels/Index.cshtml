@@ -9,5 +9,16 @@
         <label for="excelFile" class="form-label">Selecciona un archivo Excel</label>
         <input type="file" class="form-control" id="excelFile" name="excelFile" accept=".xlsx, .xls" />
     </div>
+    @if (ViewBag.archivoCorrecto) {
+        <div class="form-group">
+            <span class="text-danger">El archivo tiene que ser de extension .xlsx o .xls y ademas no puede estar vacio.</span>
+        </div>
+    }
+    @if (ViewBag.laTablaNoCumpleFormato)
+    {
+        <div class="form-group">
+            <span class="text-danger">Los campos de las tablas no coinciden.</span>
+        </div>
+    }
     <button type="submit" class="btn btn-primary">Cargar</button>
 </form>

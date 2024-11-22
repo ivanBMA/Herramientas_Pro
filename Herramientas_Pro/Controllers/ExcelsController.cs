@@ -27,16 +27,24 @@ public class ExcelsController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.laTablaNoCumpleFormato = false;
+        ViewBag.archivoCorrecto = false;
         return View();
     }
 
     [HttpPost]
     public IActionResult CargarExcel(IFormFile excelFile)
     {
-        if (excelFile == null || excelFile.Length == 0)
+        var allowedExtensions = new[] { ".xlsx", ".xls" };
+        var fileExtension = Path.GetExtension(excelFile.FileName).ToLower();
+
+        if (excelFile == null || excelFile.Length == 0 || !allowedExtensions.Contains(fileExtension))
         {
             ModelState.AddModelError("", "Por favor selecciona un archivo válido.");
-            return View();
+            ViewBag.laTablaNoCumpleFormato = false;
+            ViewBag.archivoCorrecto = true;
+            return View("/Views/Excels/Index.cshtml");
+
         }
 
         try
@@ -74,11 +82,13 @@ public class ExcelsController : Controller
             _logger.LogInformation("contador " + contador + " Bien " + contadorProductos);
 
 
-            if (contadorProductos == contador || contadorFabricacion == contador) {
+            if (contadorProductos == contador || contadorFabricacion == contador)
+            {
                 _logger.LogInformation("Existe la tabla a la que hace referencia el excel");
-                
 
-                foreach(DataRow row in dataTable.Rows){
+
+                foreach (DataRow row in dataTable.Rows)
+                {
 
                     if (contadorProductos == contador)
                     {
@@ -96,7 +106,8 @@ public class ExcelsController : Controller
                         _logger.LogInformation("------------------------- Producto " + producto.ToString());
                         _productosService.CrearProducto(producto);
                     }
-                    else {
+                    else
+                    {
                         Fabricacion fabricacion = new Fabricacion
                         {
                             Proyecto = row["Proyecto"]?.ToString() ?? string.Empty,
@@ -117,11 +128,13 @@ public class ExcelsController : Controller
                     }
                 }
 
+                return View("Resultados", dataTable); // Muestra los datos en una nueva vista
             }
-
-            
-
-            return View("Resultados", dataTable); // Muestra los datos en una nueva vista
+            else {
+                ViewBag.archivoCorrecto = false;
+                ViewBag.laTablaNoCumpleFormato = true;
+                return View("/Views/Excels/Index.cshtml");
+            }
         }
         catch (Exception ex)
         {
