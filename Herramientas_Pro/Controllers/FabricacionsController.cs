@@ -10,7 +10,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Herramientas_Pro.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin,Manager,User")]
+
 
     public class FabricacionsController : Controller
     {

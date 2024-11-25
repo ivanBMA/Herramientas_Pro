@@ -1,0 +1,52 @@
+﻿@model List<Herramientas_Pro.Models.ManageRolesViewModel>
+
+@{
+    ViewData["Title"] = "Gestionar Roles";
+}
+
+<h2>Gestionar Roles de Usuarios</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre de Usuario</th>
+            <th>Roles</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@string.Join(", ", user.Roles)</td>
+                <td>
+                    <!-- Formulario para agregar un rol -->
+                    <form asp-action="AddRole" method="post" style="display:inline;">
+                        <input type="hidden" name="userId" value="@user.UserId" />
+                        <select type="text" name="roleName" placeholder="Nombre del Rol" class="form-control d-inline-block w-50">
+                            <option value="Admin">Admin</option>
+                            <option value="User">User</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Guest">Guest</option>
+
+                        </select>
+                        <button type="submit" class="btn btn-success">Añadir Rol</button>
+                    </form>
+
+                    <!-- Formulario para eliminar un rol -->
+                    <form asp-action="RemoveRole" method="post" style="display:inline;">
+                        <input type="hidden" name="userId" value="@user.UserId" />
+                        <select type="text" name="roleName" placeholder="Nombre del Rol" class="form-control d-inline-block w-50">
+                            <option value="Admin">Admin</option>
+                            <option value="User">User</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Guest">Guest</option>
+                        </select>
+                        <button type="submit" class="btn btn-danger">Eliminar Rol</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

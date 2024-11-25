@@ -4,6 +4,7 @@ using Herramientas_Pro.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Herramientas_Pro.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,7 +41,11 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    await StartupRoles.SeedRolesAsync(roleManager);
+}
 
 
 app.UseHttpsRedirection();

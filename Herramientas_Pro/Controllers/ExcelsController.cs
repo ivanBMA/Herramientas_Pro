@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Data;
 
-[Authorize]
+[Authorize(Roles = "Admin,Manager,User")]
+
 
 public class ExcelsController : Controller
 {

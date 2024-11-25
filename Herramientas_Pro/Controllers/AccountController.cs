@@ -1,4 +1,5 @@
 ﻿using Herramientas_Pro.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -6,16 +7,19 @@ using System.Threading.Tasks;
 
 namespace Herramientas_Pro.Controllers
 {
+
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IEmailSender emailSender)
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IEmailSender emailSender, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         // Vista de Login
@@ -53,6 +57,7 @@ namespace Herramientas_Pro.Controllers
         }
 
         // Acción para Logout
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
@@ -82,14 +87,15 @@ namespace Herramientas_Pro.Controllers
                 {
                     UserName = model.Email,
                     Email = model.Email,
-                    FullName = model.FullName // Asignar la propiedad personalizada
+                    FullName = model.FullName
                 };
 
                 var result = await _userManager.CreateAsync(user, model.Password);
-
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    // Asignar un rol al usuario
+                    await _userManager.AddToRoleAsync(user, "Guest");
+
                     return RedirectToAction("Index", "Home");
                 }
 
@@ -99,7 +105,7 @@ namespace Herramientas_Pro.Controllers
                 }
             }
 
-            ViewBag.existe = true;
+            ViewBag.existe = false;
             return View(model);
         }
 
@@ -190,6 +196,61 @@ namespace Herramientas_Pro.Controllers
         public IActionResult ResetPasswordConfirmation()
         {
             return View("ResetPasswordConfirmation");
+        }
+
+        //Roles
+        
+
+        // Mostrar usuarios y roles
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public async Task<IActionResult> ManageRoles()
+        {
+            var users = _userManager.Users.ToList();
+            var model = new List<ManageRolesViewModel>();
+
+            foreach (var user in users)
+            {
+                var userRoles = await _userManager.GetRolesAsync(user);
+                model.Add(new ManageRolesViewModel
+                {
+                    UserId = user.Id,
+                    UserName = user.UserName,
+                    Roles = userRoles.ToList()
+                });
+            }
+
+            return View(model);
+        }
+
+        // Agregar un rol a un usuario
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> AddRole(string userId, string roleName)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null || !(await _roleManager.RoleExistsAsync(roleName)))
+            {
+                return NotFound("Usuario o rol no encontrado.");
+            }
+
+            await _userManager.AddToRoleAsync(user, roleName);
+            return RedirectToAction(nameof(ManageRoles));
+        }
+
+        // Eliminar un rol de un usuario
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> RemoveRole(string userId, string roleName)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null || !(await _roleManager.RoleExistsAsync(roleName)))
+            {
+                return NotFound("Usuario o rol no encontrado.");
+            }
+
+            await _userManager.RemoveFromRoleAsync(user, roleName);
+            return RedirectToAction(nameof(ManageRoles));
         }
 
     }
