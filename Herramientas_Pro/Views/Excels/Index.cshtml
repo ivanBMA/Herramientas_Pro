@@ -2,23 +2,32 @@
     ViewData["Title"] = "Cargar Excel";
 }
 
-<h1>Cargar Archivo Excel</h1>
+<div class="container mt-4">
+    <h1 class="text-center mb-4 display-6">@ViewData["Title"]</h1>
 
-<form asp-action="CargarExcel" method="post" enctype="multipart/form-data">
-    <div class="mb-3">
-        <label for="excelFile" class="form-label">Selecciona un archivo Excel</label>
-        <input type="file" class="form-control" id="excelFile" name="excelFile" accept=".xlsx, .xls" />
-    </div>
-    @if (ViewBag.archivoCorrecto) {
-        <div class="form-group">
-            <span class="text-danger">El archivo tiene que ser de extension .xlsx o .xls y ademas no puede estar vacio.</span>
+    <form asp-action="CargarExcel" method="post" enctype="multipart/form-data" class="shadow-sm p-4 rounded bg-light">
+        <div class="mb-3">
+            <label for="excelFile" class="form-label fw-bold">Selecciona un archivo Excel</label>
+            <input type="file" class="form-control" id="excelFile" name="excelFile" accept=".xlsx, .xls" />
         </div>
-    }
-    @if (ViewBag.laTablaNoCumpleFormato)
-    {
-        <div class="form-group">
-            <span class="text-danger">Los campos de las tablas no coinciden.</span>
+
+        @if (ViewBag.archivoCorrecto)
+        {
+            <div class="alert alert-danger" role="alert">
+                El archivo tiene que ser de extensión <b>.xlsx</b> o <b>.xls</b>, y no puede estar vacío.
+            </div>
+        }
+        @if (ViewBag.laTablaNoCumpleFormato)
+        {
+            <div class="alert alert-warning" role="alert">
+                Los campos de las tablas no coinciden con el formato esperado.
+            </div>
+        }
+
+        <div class="d-flex justify-content-between align-items-center">
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-upload"></i> Cargar
+            </button>
         </div>
-    }
-    <button type="submit" class="btn btn-primary">Cargar</button>
-</form>
+    </form>
+</div>

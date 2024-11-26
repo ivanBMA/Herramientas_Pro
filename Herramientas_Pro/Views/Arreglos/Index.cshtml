@@ -1,119 +1,89 @@
 ﻿@model IEnumerable<Herramientas_Pro.Models.Arreglos>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Listado de Arreglos";
 }
 
-<h1>Arreglos</h1>
+<div class="container mt-4">
+    <h1 class="text-center mb-4 display-6">@ViewData["Title"]</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Proyecto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cliente)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Diseño)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Vidrios)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Baranda)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zancas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Montajes)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Peldaños)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Guia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tornilleria)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Otros)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cita)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Fecha)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Responsable)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Proyecto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cliente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Diseño)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Vidrios)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Baranda)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Zancas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Montajes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Peldaños)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Guia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tornilleria)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Otros)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cita)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fecha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Responsable)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-lg"></i> Crear Nuevo Arreglo
+        </a>
+    </div>
+
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-striped table-hover align-middle">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Proyecto)</th>
+                    <th>@Html.DisplayNameFor(model => model.Cliente)</th>
+                    <th>@Html.DisplayNameFor(model => model.Diseño)</th>
+                    <th>@Html.DisplayNameFor(model => model.Vidrios)</th>
+                    <th>@Html.DisplayNameFor(model => model.Baranda)</th>
+                    <th>@Html.DisplayNameFor(model => model.Zancas)</th>
+                    <th>@Html.DisplayNameFor(model => model.Montajes)</th>
+                    <th>@Html.DisplayNameFor(model => model.Peldaños)</th>
+                    <th>@Html.DisplayNameFor(model => model.Guia)</th>
+                    <th>@Html.DisplayNameFor(model => model.Tornilleria)</th>
+                    <th>@Html.DisplayNameFor(model => model.Otros)</th>
+                    <th>@Html.DisplayNameFor(model => model.Estado)</th>
+                    <th>@Html.DisplayNameFor(model => model.Cita)</th>
+                    <th>@Html.DisplayNameFor(model => model.Fecha)</th>
+                    <th>@Html.DisplayNameFor(model => model.Responsable)</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="16" class="text-center text-muted">
+                            <div class="py-4">
+                                <i class="bi bi-box-seam fs-1"></i>
+                                <p class="mt-2">No hay arreglos disponibles en este momento.</p>
+                            </div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.Proyecto)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Cliente)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Diseño)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Vidrios)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Baranda)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Zancas)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Montajes)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Peldaños)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Guia)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Tornilleria)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Otros)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Estado)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Cita)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Fecha)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Responsable)</td>
+                            <td class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary btn-sm me-2">
+                                        <i class="bi bi-pencil"></i> Editar
+                                    </a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-dark btn-sm me-2">
+                                        <i class="bi bi-eye"></i> Detalles
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Eliminar
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

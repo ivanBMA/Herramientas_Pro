@@ -5,78 +5,91 @@
 }
 
 <div class="container mt-4">
-    <h1 class="text-center">@ViewData["Title"]</h1>
+    <h1 class="text-center mb-4 display-6">@ViewData["Title"]</h1>
 
-    <div class="d-flex justify-content-between align-items-center my-3">
-        <a asp-action="Create" class="btn btn-primary">Crear Nuevo Producto</a>
-        <div class="btn-group" role="group" aria-label="Ordenar por">
-            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Ordenar por
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-lg"></i> Crear Nuevo Producto
+        </a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Ordenar productos">
+                <i class="bi bi-filter"></i> Ordenar por
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProductoAsc">Producto (Ascendente)</a></li>
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProductoDesc">Producto (Descendente)</a></li>
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CategoriaAsc">Categoría (Ascendente)</a></li>
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CategoriaDesc">Categoría (Descendente)</a></li>
-
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="Codigo_ProductoAsc">Codigo_Producto (Ascendente)</a></li>
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="Codigo_ProductoDesc">Codigo_Producto (Descendente)</a></li>
-
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="Cantidad_MinimaAsc">Cantidad_Minima (Ascendente)</a></li>
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="Cantidad_MinimaDesc">Cantidad_Minima (Descendente)</a></li>
-
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="UnidadAsc">Unidad (Ascendente)</a></li>
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="UnidadDesc">Unidad (Descendente)</a></li>
-
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="Coste_UnidadAsc">Coste_Unidad (Ascendente)</a></li>
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="Coste_UnidadDesc">Coste_Unidad (Descendente)</a></li>
-
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="UbicacionAsc">Ubicación (Ascendente)</a></li>
                 <li><a class="dropdown-item" asp-action="Index" asp-route-orden="UbicacionDesc">Ubicación (Descendente)</a></li>
             </ul>
         </div>
     </div>
 
-    <table class="table table-bordered table-hover">
-        <thead class="table-dark">
-            <tr>
-                <th>@Html.DisplayNameFor(model => model.Producto)</th>
-                <th>@Html.DisplayNameFor(model => model.Categoria)</th>
-                <th>@Html.DisplayNameFor(model => model.Codigo_Producto)</th>
-                <th>@Html.DisplayNameFor(model => model.Cantidad_Minima)</th>
-                <th>@Html.DisplayNameFor(model => model.Unidad)</th>
-                <th>@Html.DisplayNameFor(model => model.Coste_Unidad)</th>
-                <th>@Html.DisplayNameFor(model => model.Ubicacion)</th>
-                <th class="text-center">Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (!Model.Any())
-            {
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-striped table-hover align-middle">
+            <thead class="table-dark text-center">
                 <tr>
-                    <td colspan="8" class="text-center">No hay productos disponibles.</td>
+                    <th>@Html.DisplayNameFor(model => model.Producto)</th>
+                    <th>@Html.DisplayNameFor(model => model.Categoria)</th>
+                    <th>@Html.DisplayNameFor(model => model.Codigo_Producto)</th>
+                    <th>@Html.DisplayNameFor(model => model.Cantidad_Minima)</th>
+                    <th>@Html.DisplayNameFor(model => model.Unidad)</th>
+                    <th>@Html.DisplayNameFor(model => model.Coste_Unidad)</th>
+                    <th>@Html.DisplayNameFor(model => model.Ubicacion)</th>
+                    <th>Acciones</th>
                 </tr>
-            }
-            else
-            {
-                @foreach (var item in Model)
+            </thead>
+            <tbody>
+                @if (!Model.Any())
                 {
                     <tr>
-                        <td>@Html.DisplayFor(modelItem => item.Producto)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Categoria)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Codigo_Producto)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Cantidad_Minima)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Unidad)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Coste_Unidad)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Ubicacion)</td>
-                        <td class="text-center">
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a>
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Detalles</a>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                        <td colspan="8" class="text-center text-muted">
+                            <div class="py-4">
+                                <i class="bi bi-box-seam fs-1"></i>
+                                <p class="mt-2">No hay productos disponibles en este momento.</p>
+                            </div>
                         </td>
                     </tr>
                 }
-            }
-        </tbody>
-    </table>
+                else
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.Producto)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Categoria)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Codigo_Producto)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Cantidad_Minima)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Unidad)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Coste_Unidad)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Ubicacion)</td>
+                            <td class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary btn-sm me-2">
+                                        <i class="bi bi-pencil"></i> Editar
+                                    </a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-dark btn-sm me-2">
+                                        <i class="bi bi-eye"></i> Detalles
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Eliminar
+                                    </a>
+                                </div>
+                            </td>
+
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

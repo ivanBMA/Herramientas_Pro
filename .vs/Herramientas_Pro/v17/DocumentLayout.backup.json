@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\arreglos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\arreglos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\entradas_salidas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\entradas_salidas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\inventarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\inventarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\fabricacions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\fabricacions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,117 +36,52 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Arreglos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Arreglos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Arreglos\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Arreglos\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Pedidos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Pedidos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Pedidos\\Index.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Pedidos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T10:05:51.132Z",
+              "WhenOpened": "2024-11-26T09:34:02.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Entradas_Salidas\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Entradas_Salidas\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Entradas_Salidas\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Entradas_Salidas\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T10:05:31.189Z",
+              "WhenOpened": "2024-11-26T09:29:55.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABDAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Productos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Productos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Productos\\Index.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Productos\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAUwEwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T10:05:05.681Z",
+              "WhenOpened": "2024-11-26T08:57:43.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Fabricacions\\Index.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Fabricacions\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Fabricacions\\Index.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Fabricacions\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAGMAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T09:58:27.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Herramientas_Pro\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:58:15.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Account\\ResetPassword.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Account\\ResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Account\\ResetPassword.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Account\\ResetPassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T09:55:27.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ResetPasswordConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T09:55:25.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T09:48:39.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Herramientas_Pro\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAA1wGsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T10:49:51.881Z",
+              "WhenOpened": "2024-11-26T08:50:07.743Z",
               "EditorCaption": ""
             },
             {
@@ -177,7 +92,7 @@
               "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAwG8AAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAwG0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-22T08:34:31.639Z",
               "EditorCaption": ""
