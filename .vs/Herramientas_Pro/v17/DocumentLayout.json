@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\controllers\\entradas_salidascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\controllers\\entradas_salidascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\inventarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\inventarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\servicios\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\servicios\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\fabricacions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\fabricacions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,53 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Pedidos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Pedidos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Pedidos\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Pedidos\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T09:34:02.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Inventarios\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T09:29:55.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Productos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Productos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Productos\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Productos\\Index.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAUwEwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T08:57:43.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Fabricacions\\Index.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Fabricacions\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Fabricacions\\Index.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Fabricacions\\Index.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAGMAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T08:50:07.743Z",
+              "Title": "Entradas_SalidasController.cs",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
+              "RelativeToolTip": "Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAowKsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:45:21.001Z",
               "EditorCaption": ""
             },
             {
@@ -92,9 +53,48 @@
               "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAwG0AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwG0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-22T08:34:31.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Herramientas_Pro\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:41:14.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Servicios\\InventarioService.cs",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Servicios\\InventarioService.cs",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Servicios\\InventarioService.cs",
+              "RelativeToolTip": "Herramientas_Pro\\Servicios\\InventarioService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:41:46.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Models\\Inventario.cs",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Models\\Inventario.cs",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Models\\Inventario.cs",
+              "RelativeToolTip": "Herramientas_Pro\\Models\\Inventario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:42:31.23Z",
               "EditorCaption": ""
             }
           ]

@@ -22,9 +22,46 @@ namespace Herramientas_Pro.Controllers
         }
 
         // GET: Arreglos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string orden = "nombreAsc")
         {
-            return View(await _context.Arreglos.ToListAsync());
+            var arreglos = _context.Arreglos.AsQueryable();
+
+            arreglos = orden switch
+            {
+                "ProyectoAsc" => arreglos.OrderBy(p => p.Proyecto),
+                "ProyectoDesc" => arreglos.OrderByDescending(p => p.Proyecto),
+                "ClienteAsc" => arreglos.OrderBy(p => p.Cliente),
+                "ClienteDesc" => arreglos.OrderByDescending(p => p.Cliente),
+                "DiseñoAsc" => arreglos.OrderBy(p => p.Diseño),
+                "DiseñoDesc" => arreglos.OrderByDescending(p => p.Diseño),
+                "VidriosAsc" => arreglos.OrderBy(p => p.Vidrios),
+                "VidriosDesc" => arreglos.OrderByDescending(p => p.Vidrios),
+                "BarandaAsc" => arreglos.OrderBy(p => p.Baranda),
+                "BarandaDesc" => arreglos.OrderByDescending(p => p.Baranda),
+                "ZancasAsc" => arreglos.OrderBy(p => p.Zancas),
+                "ZancasDesc" => arreglos.OrderByDescending(p => p.Zancas),
+                "MontajesAsc" => arreglos.OrderBy(p => p.Montajes),
+                "MontajesDesc" => arreglos.OrderByDescending(p => p.Montajes),
+                "PeldañosAsc" => arreglos.OrderBy(p => p.Peldaños),
+                "PeldañosDesc" => arreglos.OrderByDescending(p => p.Peldaños),
+                "GuiaAsc" => arreglos.OrderBy(p => p.Guia),
+                "GuiaDesc" => arreglos.OrderByDescending(p => p.Guia),
+                "TornilleriaAsc" => arreglos.OrderBy(p => p.Tornilleria),
+                "TornilleriaDesc" => arreglos.OrderByDescending(p => p.Tornilleria),
+                "OtrosAsc" => arreglos.OrderBy(p => p.Otros),
+                "OtrosDesc" => arreglos.OrderByDescending(p => p.Otros),
+                "EstadoAsc" => arreglos.OrderBy(p => p.Estado),
+                "EstadoDesc" => arreglos.OrderByDescending(p => p.Estado),
+                "CitaAsc" => arreglos.OrderBy(p => p.Cita),
+                "CitaDesc" => arreglos.OrderByDescending(p => p.Cita),
+                "FechaAsc" => arreglos.OrderBy(p => p.Fecha),
+                "FechaDesc" => arreglos.OrderByDescending(p => p.Fecha),
+                "ResponsableAsc" => arreglos.OrderBy(p => p.Responsable),
+                "ResponsableDesc" => arreglos.OrderByDescending(p => p.Responsable),
+                _ => arreglos
+            };
+
+            return View(arreglos.ToList());
         }
 
         // GET: Arreglos/Details/5

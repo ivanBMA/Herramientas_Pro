@@ -11,6 +11,25 @@
         <a asp-action="Create" class="btn btn-success">
             <i class="bi bi-plus-lg"></i> Crear Nuevo Registro
         </a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-filter"></i> Ordenar por
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CodigoAsc">Codigo (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CodigoDesc">Codigo (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProductoAsc">Producto (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProductoDesc">Producto (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CantidadAsc">Cantidad (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CantidadDesc">Cantidad (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="UnidadAsc">Unidad (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="UnidadDesc">Unidad (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="FechaAsc">Fecha (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="FechaDesc">Fecha (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="FirmaAsc">Firma (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="FirmaDesc">Firma (Descendente)</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="table-responsive shadow-sm rounded">

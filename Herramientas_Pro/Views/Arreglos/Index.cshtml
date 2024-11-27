@@ -11,6 +11,43 @@
         <a asp-action="Create" class="btn btn-success">
             <i class="bi bi-plus-lg"></i> Crear Nuevo Arreglo
         </a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-filter"></i> Ordenar por
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProyectoAsc">Proyecto (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ProyectoDesc">Proyecto (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ClienteAsc">Cliente (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ClienteDesc">Cliente (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="DiseñoAsc">Diseño (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="DiseñoDesc">Diseño (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="VidriosAsc">Vidrios (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="VidriosDesc">Vidrios (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="BarandaAsc">Baranda (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="BarandaDesc">Baranda (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ZancasAsc">Zancas (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ZancasDesc">Zancas (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="MontajesAsc">Montajes (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="MontajesDesc">Montajes (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="PeldañosAsc">Peldaños (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="PeldañosDesc">Peldaños (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="GuiaAsc">Guia (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="GuiaDesc">Guia (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="TornilleriaAsc">Tornilleria (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="TornilleriaDesc">Tornilleria (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="OtrosAsc">Otros (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="OtrosDesc">Otros (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="EstadoAsc">Estado (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="EstadoDesc">Estado (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CitaAsc">Cita (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="CitaDesc">Cita (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="FechaAsc">Fecha (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="FechaDesc">Fecha (Descendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ResponsableAsc">Responsable (Ascendente)</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-orden="ResponsableDesc">Responsable (Descendente)</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="table-responsive shadow-sm rounded">

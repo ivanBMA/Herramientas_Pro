@@ -23,9 +23,29 @@ namespace Herramientas_Pro.Controllers
         }
 
         // GET: Inventarios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string orden = "nombreAsc")
         {
-            return View(await _context.Inventario.ToListAsync());
+            var inventario = _context.Inventario.AsQueryable();
+            inventario = orden switch
+            {
+                "ProductoAsc" => inventario.OrderBy(p => p.Producto),
+                "ProductoDesc" => inventario.OrderByDescending(p => p.Producto),
+                "Codigo_ProductoAsc" => inventario.OrderBy(p => p.Codigo_Producto),
+                "Codigo_ProductoDesc" => inventario.OrderByDescending(p => p.Codigo_Producto),
+                "stockAsc" => inventario.OrderBy(p => p.stock),
+                "stockDesc" => inventario.OrderByDescending(p => p.stock),
+                "UnidadAsc" => inventario.OrderBy(p => p.Unidad),
+                "UnidadDesc" => inventario.OrderByDescending(p => p.Unidad),
+                "Cantidad_MinimaAsc" => inventario.OrderBy(p => p.Cantidad_Minima),
+                "Cantidad_MinimaDesc" => inventario.OrderByDescending(p => p.Cantidad_Minima),
+                "Unidad2Asc" => inventario.OrderBy(p => p.Unidad2),
+                "Unidad2Desc" => inventario.OrderByDescending(p => p.Unidad2),
+                "ComprarAsc" => inventario.OrderBy(p => p.Comprar),
+                "ComprarDesc" => inventario.OrderByDescending(p => p.Comprar),
+                _ => inventario
+            };
+
+            return View(inventario.ToList());
         }
 
         // GET: Inventarios/Details/5

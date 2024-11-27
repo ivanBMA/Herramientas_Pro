@@ -23,9 +23,28 @@ namespace Herramientas_Pro.Controllers
         }
 
         // GET: Entradas_Salidas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string orden = "nombreAsc")
         {
-            return View(await _context.Entradas_Salidas.ToListAsync());
+            var entradas_salidas = _context.Entradas_Salidas.AsQueryable();
+
+            entradas_salidas = orden switch
+            {
+                "CodigoAsc" => entradas_salidas.OrderBy(p => p.Codigo),
+                "CodigoDesc" => entradas_salidas.OrderByDescending(p => p.Codigo),
+                "ProductoAsc" => entradas_salidas.OrderBy(p => p.Producto),
+                "ProductoDesc" => entradas_salidas.OrderByDescending(p => p.Producto),
+                "CantidadAsc" => entradas_salidas.OrderBy(p => p.Cantidad),
+                "CantidadDesc" => entradas_salidas.OrderByDescending(p => p.Cantidad),
+                "UnidadAsc" => entradas_salidas.OrderBy(p => p.Unidad),
+                "UnidadDesc" => entradas_salidas.OrderByDescending(p => p.Unidad),
+                "FechaAsc" => entradas_salidas.OrderBy(p => p.Fecha),
+                "FechaDesc" => entradas_salidas.OrderByDescending(p => p.Fecha),
+                "FirmaAsc" => entradas_salidas.OrderBy(p => p.Firma),
+                "FirmaDesc" => entradas_salidas.OrderByDescending(p => p.Firma),
+                _ => entradas_salidas
+            };
+
+            return View(entradas_salidas.ToList());
         }
 
         // GET: Entradas_Salidas/Details/5

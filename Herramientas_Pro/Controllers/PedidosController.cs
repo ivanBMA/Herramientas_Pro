@@ -23,9 +23,38 @@ namespace Herramientas_Pro.Controllers
         }
 
         // GET: Pedidos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string orden = "nombreAsc")
         {
-            return View(await _context.Pedidos.ToListAsync());
+            var pedidos = _context.Pedidos.AsQueryable();
+
+            pedidos = orden switch
+            {
+                "PresupuestosAsc" => pedidos.OrderBy(p => p.Presupuestos),
+                "PresupuestosDesc" => pedidos.OrderByDescending(p => p.Presupuestos),
+                "ClienteAsc" => pedidos.OrderBy(p => p.Cliente),
+                "ClienteDesc" => pedidos.OrderByDescending(p => p.Cliente),
+                "TipoAsc" => pedidos.OrderBy(p => p.Tipo),
+                "TipoDesc" => pedidos.OrderByDescending(p => p.Tipo),
+                "MedicionAsc" => pedidos.OrderBy(p => p.Medicion),
+                "MedicionDesc" => pedidos.OrderByDescending(p => p.Medicion),
+                "Nube_PuntosAsc" => pedidos.OrderBy(p => p.Nube_Puntos),
+                "Nube_PuntosDesc" => pedidos.OrderByDescending(p => p.Nube_Puntos),
+                "EstadoAsc" => pedidos.OrderBy(p => p.Estado),
+                "EstadoDesc" => pedidos.OrderByDescending(p => p.Estado),
+                "FechaAsc" => pedidos.OrderBy(p => p.Fecha),
+                "FechaDesc" => pedidos.OrderByDescending(p => p.Fecha),
+                "Diseño_InicialAsc" => pedidos.OrderBy(p => p.Diseño_Inicial),
+                "Diseño_InicialDesc" => pedidos.OrderByDescending(p => p.Diseño_Inicial),
+                "FimraAsc" => pedidos.OrderBy(p => p.Fimra),
+                "FimraDesc" => pedidos.OrderByDescending(p => p.Fimra),
+                "OtrosAsc" => pedidos.OrderBy(p => p.Otros),
+                "OtrosDesc" => pedidos.OrderByDescending(p => p.Otros),
+                "ResponsableAsc" => pedidos.OrderBy(p => p.Responsable),
+                "ResponsableDesc" => pedidos.OrderByDescending(p => p.Responsable),
+                _ => pedidos
+            };
+
+            return View(pedidos.ToList());
         }
 
         // GET: Pedidos/Details/5
