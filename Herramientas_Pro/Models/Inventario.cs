@@ -33,7 +33,13 @@ namespace Herramientas_Pro.Models
 
         public Double ActualizarStock(Inventario inventario, double cantidadSalida)
         {
-            inventario.stock = inventario.stock + cantidadSalida;
+            if (inventario.stock + cantidadSalida < 0)
+            {
+                inventario.stock = 0;
+            }
+            else {
+                inventario.stock = inventario.stock + cantidadSalida;
+            }
             return inventario.stock;
         }
     }

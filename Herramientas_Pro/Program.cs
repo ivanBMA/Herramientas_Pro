@@ -19,6 +19,8 @@ builder.Logging.AddDebug();   // Muestra logs en la ventana de depuración (Visua
 builder.Services.AddScoped<ProductosService>(); // Registra el servicio como Scoped
 builder.Services.AddScoped<FabricacionsService>(); // Registra el servicio como Scoped
 builder.Services.AddScoped<InventarioService>(); // Registra el servicio como Scoped
+builder.Services.AddScoped<Entradas_SalidasService>(); // Registra el servicio como Scoped
+
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 

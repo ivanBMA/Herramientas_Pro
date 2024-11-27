@@ -20,13 +20,16 @@ namespace Herramientas_Pro.Controllers
         private readonly ProductosService _productosService;
         private readonly ILogger<ExcelsController> _logger;
         private readonly InventarioService _inventarioService;
+        private readonly Entradas_SalidasService _entradas_salidasService;
 
 
-        public ProductosController(ApplicationDbContext context, ProductosService productosService, InventarioService inventarioService)
+
+        public ProductosController(ApplicationDbContext context, ProductosService productosService, InventarioService inventarioService, Entradas_SalidasService entradas_SalidasService)
         {
             _context = context;
             _productosService = productosService ?? throw new ArgumentNullException(nameof(productosService));
             _inventarioService = inventarioService ?? throw new ArgumentNullException(nameof(inventarioService));
+            _entradas_salidasService = entradas_SalidasService ?? throw new ArgumentNullException(nameof(entradas_SalidasService));
         }
 
         // GET: Productos
@@ -161,9 +164,16 @@ namespace Herramientas_Pro.Controllers
                         Unidad2 = productos.Unidad,
                     };
 
+                    Entradas_Salidas entradas_salidas = new()
+                    {
+                        Producto = productos.Producto,
+                        Unidad = productos.Unidad,
+                    };
+
                     _inventarioService.EditarInventario(inventario, productos.Codigo_Producto);
-                    
-                    
+                    _entradas_salidasService.EditarEntradas_Salidas(entradas_salidas, productos.Codigo_Producto);
+
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -207,6 +217,12 @@ namespace Herramientas_Pro.Controllers
             var productos = await _context.Productos.FindAsync(id);
             if (productos != null)
             {
+                var inventario = _context.Inventario.FirstOrDefault(e => e.Codigo_Producto == productos.Codigo_Producto);
+                if (inventario != null) {
+                    _entradas_salidasService.BorrarEntradas_Salidas(productos.Codigo_Producto);
+                    _inventarioService.BorrarInventario(inventario);
+                }
+
                 _context.Productos.Remove(productos);
             }
 

@@ -77,14 +77,24 @@ namespace Herramientas_Pro.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Codigo,Producto,Cantidad,Unidad,Fecha,Firma")] Entradas_Salidas entradas_Salidas)
+        public async Task<IActionResult> Create([Bind("Id,Codigo,Cantidad,Fecha,Firma")] Entradas_Salidas entradas_Salidas)
         {
-            if (ModelState.IsValid)
+
+            if (
+                        (entradas_Salidas.Codigo != null && entradas_Salidas.Codigo is string) 
+                    &&  (entradas_Salidas.Cantidad != null && entradas_Salidas.Cantidad is Double)
+                    &&  (entradas_Salidas.Fecha != null && entradas_Salidas.Fecha is DateTime)
+                    &&  (entradas_Salidas.Firma != null && entradas_Salidas.Firma is string)
+                )
             {
                 if (comprovarExistencia(entradas_Salidas))
                 {
                     if (ValidadorCantidad(entradas_Salidas))
                     {
+                        var inventario = _context.Inventario.FirstOrDefault(e => e.Codigo_Producto == entradas_Salidas.Codigo);
+                        entradas_Salidas.Producto = inventario.Producto;
+                        entradas_Salidas.Unidad = inventario.Unidad;
+
                         _context.Add(entradas_Salidas);
                         await _context.SaveChangesAsync();
                         ActualizarInventario(entradas_Salidas);
@@ -94,16 +104,18 @@ namespace Herramientas_Pro.Controllers
                     {
                         ViewBag.existe = false;
                         ViewBag.ShowDetails = true;
-                        View(entradas_Salidas);
+                        return View(entradas_Salidas);
                     }
                 }
                 else {
                     ViewBag.ShowDetails = false;
                     ViewBag.existe = true;
-                    View(entradas_Salidas);
+                    return View(entradas_Salidas);
                 }
                 
             }
+            ViewBag.existe = false;
+            ViewBag.ShowDetails = false;
             return View(entradas_Salidas);
         }
 
@@ -194,10 +206,13 @@ namespace Herramientas_Pro.Controllers
             var entradas_Salidas = await _context.Entradas_Salidas.FindAsync(id);
             if (entradas_Salidas != null)
             {
+                entradas_Salidas.Cantidad = entradas_Salidas.Cantidad * (-1);
+                ActualizarInventario(entradas_Salidas);
                 _context.Entradas_Salidas.Remove(entradas_Salidas);
             }
 
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
