@@ -15,12 +15,13 @@
     li:hover{
         border-bottom: 2px solid black;
     }
-    footer{
-        margin-top:1rem;
-    }
 
     .stiloBotonesAcount{
         float:right;
+    }
+
+    footer {
+        margin-top: 6rem; /* Ajusta el valor según necesites */
     }
 </style>
 
@@ -132,15 +133,15 @@
             </div>
         </nav>
     </header>
-    <div class="container mt-5 pt-5">
-        <main role="main" class="pb-3">
+    <div class="container mt-5 pt-5 mb-5">
+        <main role="main" class="pb-5">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-light bg-dark py-3">
+    <footer class="border-top footer text-light bg-dark py-3 mt-5">
         <div class="container text-center">
-            &copy; 2024 - Herramientas_Pro - <a class="text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - Herramientas_Pro 
         </div>
     </footer>
 

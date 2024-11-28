@@ -124,12 +124,14 @@ namespace Herramientas_Pro.Controllers
         {
             if (id == null)
             {
+                ViewBag.ShowDetails = false;
                 return NotFound();
             }
 
             var entradas_Salidas = await _context.Entradas_Salidas.FindAsync(id);
             if (entradas_Salidas == null)
             {
+                ViewBag.ShowDetails = false;
                 return NotFound();
             }
             ViewBag.ShowDetails = false;
@@ -145,10 +147,14 @@ namespace Herramientas_Pro.Controllers
         {
             if (id != entradas_Salidas.Id)
             {
+                ViewBag.ShowDetails = false;
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if ((entradas_Salidas.Codigo != null && entradas_Salidas.Codigo is string)
+                 && (entradas_Salidas.Cantidad != null && entradas_Salidas.Cantidad is Double)
+                 && (entradas_Salidas.Fecha != null && entradas_Salidas.Fecha is DateTime)
+                 && (entradas_Salidas.Firma != null && entradas_Salidas.Firma is string))
             {
                 try
                 {
@@ -161,8 +167,10 @@ namespace Herramientas_Pro.Controllers
                     }
                     else {
                         ViewBag.ShowDetails = true;
+                        return View(entradas_Salidas);
+
                     }
-                    
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -177,6 +185,7 @@ namespace Herramientas_Pro.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.ShowDetails = false;
             return View(entradas_Salidas);
         }
 
