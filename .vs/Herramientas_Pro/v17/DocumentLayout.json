@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\arreglos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\arreglos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\inventarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\inventarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\entradas_salidas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\entradas_salidas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\controllers\\entradas_salidascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\controllers\\entradas_salidascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Inventarios\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Edit.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Inventarios\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Arreglos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Arreglos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Arreglos\\Edit.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Arreglos\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T09:41:24.726Z",
+              "WhenOpened": "2024-11-29T09:52:27.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAJUAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAIYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-22T08:34:31.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Entradas_SalidasController.cs",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
-              "RelativeToolTip": "Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAgwJ4AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:28:31.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Entradas_Salidas\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Entradas_Salidas\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Entradas_Salidas\\Edit.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Entradas_Salidas\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T09:27:39.742Z",
               "EditorCaption": ""
             }
           ]

@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\inventarios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\inventarios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\fabricacions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\fabricacions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\entradas_salidas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\entradas_salidas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\arreglos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\arreglos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\arreglos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\arreglos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\inventarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\inventarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\views\\entradas_salidas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\views\\entradas_salidas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|c:\\users\\iv\u00E1n\\documents\\domi\\herramientas_pro\\herramientas_pro\\controllers\\entradas_salidascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E4E1720-5A8D-4B8D-B92E-5D09EDDBD434}|Herramientas_Pro\\Herramientas_Pro.csproj|solutionrelative:herramientas_pro\\controllers\\entradas_salidascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Inventarios\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Edit.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Inventarios\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T09:41:24.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAI0AAABDAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Productos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Productos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Productos\\Details.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Productos\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T08:34:31.639Z",
+              "WhenOpened": "2024-11-29T09:53:59.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Entradas_SalidasController.cs",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
-              "RelativeToolTip": "Herramientas_Pro\\Controllers\\Entradas_SalidasController.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAgwJ4AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:28:31.72Z",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Pedidos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Pedidos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Pedidos\\Details.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Pedidos\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T09:53:55.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Entradas_Salidas\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Entradas_Salidas\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Entradas_Salidas\\Edit.cshtml",
-              "RelativeToolTip": "Herramientas_Pro\\Views\\Entradas_Salidas\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABNAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Details.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Inventarios\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Inventarios\\Details.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Inventarios\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T09:27:39.742Z",
+              "WhenOpened": "2024-11-29T09:53:51.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Fabricacions\\Details.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Fabricacions\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Fabricacions\\Details.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Fabricacions\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T09:53:46.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Entradas_Salidas\\Details.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Entradas_Salidas\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Entradas_Salidas\\Details.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Entradas_Salidas\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T09:53:38.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Arreglos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Arreglos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Arreglos\\Details.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Arreglos\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T09:53:31.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Arreglos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Arreglos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Arreglos\\Edit.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Arreglos\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T09:52:27.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Iv\u00E1n\\Documents\\Domi\\Herramientas_Pro\\Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Herramientas_Pro\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAIYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T08:34:31.639Z",
               "EditorCaption": ""
             }
           ]
