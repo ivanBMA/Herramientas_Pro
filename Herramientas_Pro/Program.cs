@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Herramientas_Pro.Data;
+using System.Globalization;//------------->Puede que borrar
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,7 +34,32 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders(); // Esto es opcional si usas tokens de restablecimiento de contraseña
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Configurar cultura global
+var cultureInfo = new CultureInfo("es-ES")
+{
+    NumberFormat = { NumberDecimalSeparator = "," }
+};
+
+CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
+// Middleware para forzar la cultura en las solicitudes
+var supportedCultures = new[] { cultureInfo };
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture(cultureInfo);
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+});
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var app = builder.Build();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+app.UseRequestLocalization();
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

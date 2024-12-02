@@ -53,8 +53,8 @@
                 <span asp-validation-for="Codigo_Producto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Cantidad_Minima" class="control-label"></label>
-                <input asp-for="Cantidad_Minima" class="form-control" />
+                <label asp-for="Cantidad_Minima" class="control-label" ></label>
+                <input asp-for="Cantidad_Minima" class="form-control" type="number" step="1" />
                 <span asp-validation-for="Cantidad_Minima" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -85,7 +85,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Coste_Unidad" class="control-label"></label>
-                <input asp-for="Coste_Unidad" class="form-control" />
+                <input asp-for="Coste_Unidad" class="form-control" type="number" />
                 <span asp-validation-for="Coste_Unidad" class="text-danger"></span>
             </div>
             <div class="form-group">

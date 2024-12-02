@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -89,9 +89,9 @@
                                             <i class="bi bi-wrench"></i> Arreglos
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark @ViewData["ActiveExcels"]" asp-area="" asp-controller="Excels" asp-action="Index">
-                                            <i class="bi btn-outline-info"></i> Excels
+                                    <li  class="nav-item">
+                                        <a class="nav-link text-dark @ViewData["ActiveExcels"]" asp-area="" asp-controller="Excels" asp-action="Index" >
+                                            <i  class="bi btn-outline-info"></i> Excels
                                         </a>
                                     </li>
                                     @if (User.IsInRole("Admin"))
@@ -148,6 +148,41 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        //getElementsByClassName
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("Script cargado correctamente.");
+            var cantidadMinimaField = document.getElementById("Cantidad_Minima");
+
+            if (cantidadMinimaField) {
+                console.log("Elemento encontrado:", cantidadMinimaField);
+                cantidadMinimaField.value = cantidadMinimaField.value.replace(",00", "");
+                cantidadMinimaField.value = cantidadMinimaField.value.replace(".00", "");
+
+                console.log("Nuevo valor:", cantidadMinimaField.value);
+            } else {
+                console.log("Elemento no encontrado.");
+            }
+
+            var cantidadMinimaVarios = document.getElementsByClassName("Cantidad_Minima");
+            for (let cantidadMinima of cantidadMinimaVarios) {
+
+                if (cantidadMinima) {
+                    console.log("Elemento encontrado:", cantidadMinima.textContent);
+                    cantidadMinima.textContent = cantidadMinima.textContent.replace(",00", "");
+                    cantidadMinima.textContent = cantidadMinima.textContent.replace(".00", "");
+
+                console.log("Nuevo valor:", cantidadMinima.textContent);
+                } 
+                else {
+                    console.log("Elemento no encontrado.");
+                }
+
+            }
+            
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Herramientas_Pro.Models;
 using Herramientas_Pro.Services;
 using Microsoft.AspNetCore.Authorization;
+using System.Globalization;
 
 namespace Herramientas_Pro.Controllers
 {
